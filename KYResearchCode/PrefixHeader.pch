@@ -9,7 +9,89 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "KYDef.h"
+#import "KYUtility.h"
+
+#import "UIColor+HexString.h"
+#import "CocoaLumberjack.h"
+#import "UIView+Frame.h"
+#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"//友盟微信分享
+#import "UMSocialQQHandler.h"//友盟QQ分享
+#import <TencentOpenAPI/QQApiInterface.h>//友盟QQ分享框架
+#import "WXApi.h"//友盟微信分享
+#import "UMSocialSinaSSOHandler.h"
+
+#import "FMDB.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+GIF.h"
+
+
+#if DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
+
+
+
+
+//-------------------获取设备大小-------------------------
+
+//设备宽、高、Navbar、tabBar高
+#define kScreen_Width              [UIScreen mainScreen].bounds.size.width
+#define kScreen_Height             [UIScreen mainScreen].bounds.size.height
+#define kNavigationBar_Height      64.f
+#define kTabBar_Height             49.f
+
+//320屏宽和当前手机屏宽的比例
+#define kScreenWidth_320Scale      [UIScreen mainScreen].bounds.size.width / 320.f
+//375屏宽和当前手机屏宽的比例
+#define kScreenWidth_375Scale      [UIScreen mainScreen].bounds.size.width / 375.f
+//414屏宽和当前手机屏宽的比例
+#define kScreenWidth_414Scale      [UIScreen mainScreen].bounds.size.width / 414.f
+
+//-------------------获取设备大小-------------------------
+
+
+//----------------------系统----------------------------
+
+//iOS系统大于等于7.0版本
+#define kIOS7_Later   ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? YES : NO)
+#define kSystemVersion [[UIDevice currentDevice].systemVersion floatValue]
+//----------------------系统----------------------------
+
+
+//----------------------图片----------------------------
+
+//读取本地图片
+#define kLoadImage(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
+
+//定义UIImage对象
+#define kImage(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
+
+//----------------------图片----------------------------
+
+
+//----------------------颜色----------------------------
+//16进制颜色
+#define kColor(x)       [UIColor colorWithHexString:x]
+#define kBackgroundColor   @"19A3E4"
+
+//----------------------颜色----------------------------
+
+
+//由角度获取弧度 有弧度获取角度
+#define kDegreesToRadian(x) (M_PI * (x) / 180.0)
+#define kRadianToDegrees(radian) (radian*180.0)/(M_PI)
+
+#define kEmptyString        @""
+
+#define kPathOfAppHome    NSHomeDirectory()
+#define kPathOfTemp        NSTemporaryDirectory()
+#define kPathOfDocument    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
 
 #endif /* PrefixHeader_pch */

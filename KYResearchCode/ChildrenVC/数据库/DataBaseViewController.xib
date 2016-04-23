@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DataBaseViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-Vo-Xcb">
+                    <rect key="frame" x="242" y="113" width="116" height="37"/>
+                    <color key="backgroundColor" red="0.098039215690000001" green="0.63921568630000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="R1d-mC-HE1"/>
+                        <constraint firstAttribute="width" constant="116" id="Xq6-Bd-wkH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Create Table">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createTable:" destination="-1" eventType="touchUpInside" id="fs8-cD-cFf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZc-eh-dAK">
+                    <rect key="frame" x="243" y="242" width="115" height="37"/>
+                    <color key="backgroundColor" red="0.098039215690000001" green="0.63921568630000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="oHL-0V-QEI"/>
+                        <constraint firstAttribute="width" constant="115" id="xCR-8W-C2T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Query">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="queryData:" destination="-1" eventType="touchUpInside" id="1Qz-56-6j1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olX-er-I8H">
+                    <rect key="frame" x="243" y="175" width="115" height="37"/>
+                    <color key="backgroundColor" red="0.098039215690000001" green="0.63921568630000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="DjE-QU-r39"/>
+                        <constraint firstAttribute="height" constant="37" id="kEb-OS-BPu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Insert">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="insertData:" destination="-1" eventType="touchUpInside" id="1h4-h6-kY9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p64-kD-ZOM">
+                    <rect key="frame" x="242" y="381" width="116" height="37"/>
+                    <color key="backgroundColor" red="0.098039215690000001" green="0.63921568630000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="P7J-NG-FeS"/>
+                        <constraint firstAttribute="width" constant="116" id="c4H-SK-LfK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="multi-thread">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="multithread:" destination="-1" eventType="touchUpInside" id="wa7-1z-UsA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zj-Ra-ZDd">
+                    <rect key="frame" x="242" y="306" width="116" height="37"/>
+                    <color key="backgroundColor" red="0.098039215690000001" green="0.63921568630000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="FKZ-Ye-1nG"/>
+                        <constraint firstAttribute="width" constant="116" id="T5t-Lq-8yo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Clear All">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clearAll:" destination="-1" eventType="touchUpInside" id="KwD-Dr-eUY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kda-Vo-Xcb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="113" id="219-Vy-axv"/>
+                <constraint firstItem="p64-kD-ZOM" firstAttribute="top" secondItem="1zj-Ra-ZDd" secondAttribute="bottom" constant="38" id="Awo-U0-st4"/>
+                <constraint firstAttribute="centerX" secondItem="Kda-Vo-Xcb" secondAttribute="centerX" id="DQr-GV-y6y"/>
+                <constraint firstAttribute="centerX" secondItem="1zj-Ra-ZDd" secondAttribute="centerX" id="VgG-QY-6YI"/>
+                <constraint firstAttribute="centerX" secondItem="olX-er-I8H" secondAttribute="centerX" id="W2r-bu-fPJ"/>
+                <constraint firstItem="1zj-Ra-ZDd" firstAttribute="top" secondItem="qZc-eh-dAK" secondAttribute="bottom" constant="27" id="aQ0-Kk-9nh"/>
+                <constraint firstItem="olX-er-I8H" firstAttribute="top" secondItem="Kda-Vo-Xcb" secondAttribute="bottom" constant="25" id="kwg-So-JFs"/>
+                <constraint firstItem="qZc-eh-dAK" firstAttribute="top" secondItem="olX-er-I8H" secondAttribute="bottom" constant="30" id="pPG-vq-MV1"/>
+                <constraint firstAttribute="centerX" secondItem="qZc-eh-dAK" secondAttribute="centerX" id="sxf-oc-M0G"/>
+                <constraint firstAttribute="centerX" secondItem="p64-kD-ZOM" secondAttribute="centerX" id="tFd-4d-fsg"/>
+            </constraints>
+            <point key="canvasLocation" x="434" y="339"/>
+        </view>
+    </objects>
+</document>
