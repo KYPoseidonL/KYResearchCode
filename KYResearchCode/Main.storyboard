@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nWM-fL-ePc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nWM-fL-ePc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -20,6 +20,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xbd-y8-Sbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-546" y="175"/>
+        </scene>
+        <!--Record Video Controller-->
+        <scene sceneID="ite-ZF-mbA">
+            <objects>
+                <viewController storyboardIdentifier="RecordVideoID" id="vLl-P4-sy2" customClass="RecordVideoController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eSN-mH-fuc"/>
+                        <viewControllerLayoutGuide type="bottom" id="YZw-Xs-8EA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="egB-uE-ue2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ6-yW-4zh">
+                                <rect key="frame" x="175" y="113" width="251" height="99"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.61568627450000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="251" id="SZ0-qQ-ir1"/>
+                                    <constraint firstAttribute="height" constant="99" id="lo8-5S-K90"/>
+                                </constraints>
+                                <state key="normal" title="录制视频"/>
+                                <connections>
+                                    <action selector="recordVideoAction:" destination="vLl-P4-sy2" eventType="touchUpInside" id="oQk-F9-hXo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DJ6-yW-4zh" firstAttribute="centerX" secondItem="egB-uE-ue2" secondAttribute="centerX" id="csM-pt-aBP"/>
+                            <constraint firstItem="DJ6-yW-4zh" firstAttribute="top" secondItem="eSN-mH-fuc" secondAttribute="bottom" constant="93" id="n4V-ih-bnc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VJ-NV-umc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="851"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="viP-9J-zIq">
@@ -64,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xe6-Uz-aLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-193" y="851"/>
+            <point key="canvasLocation" x="-41" y="851"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">

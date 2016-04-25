@@ -26,6 +26,7 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - MJExtension (3.0.10)
+  - MJRefresh (3.1.0)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - CocoaLumberjack (~> 2.0.0)
   - FMDB (~> 2.6.2)
   - MJExtension (~> 3.0.10)
+  - MJRefresh (~> 3.1.0)
   - SDWebImage (~> 3.7.5)
 
 SPEC CHECKSUMS:
@@ -42,6 +44,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0
