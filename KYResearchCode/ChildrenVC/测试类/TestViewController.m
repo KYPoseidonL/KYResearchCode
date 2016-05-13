@@ -26,12 +26,14 @@
 }
 
 - (void)setup {
-
-    self.testWebView.scalesPageToFit = YES;
-    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"]];
-    [self.testWebView loadRequest:urlRequest];
     
-
+    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"] placeholderImage:nil];
+    
+//    self.testWebView.scalesPageToFit = YES;
+//    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"]];
+//    [self.testWebView loadRequest:urlRequest];
+    
+    
     BOOL isFlag = [KYUtility validateUserName:@"fdas23"];
     if (isFlag) {
         DDLogDebug(@"验证成功");

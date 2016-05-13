@@ -10,6 +10,11 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+
+/**
+ *  储存项目中加密字符串的字典
+ */
+@property (nonatomic,strong) NSMutableDictionary *mdic;
 @property (strong, nonatomic) UIWindow *window;
 
 

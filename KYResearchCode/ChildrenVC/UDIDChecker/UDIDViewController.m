@@ -20,6 +20,7 @@
 #import <dlfcn.h>
 #import "OpenUDID.h"
 #import "SSKeychain.h"
+#import "AppDelegate.h"
 
 @interface UDIDViewController ()
 
@@ -44,6 +45,7 @@
     
     self.keychainLabel.text = [NSString stringWithFormat:@"KEYCHAIN:  %@",[self getDeviceInfoFromKeychain]];
     self.userdefultLabel.text = [NSString stringWithFormat:@"USDEF:  %@",[self getDeviceInfoFromUserDefult]];
+    
     
 }
 
@@ -88,19 +90,24 @@ NSString *getUdid() {
 
 
 //--------------------2.IDFA广告标示符--------------------//
-#define ADSUPPORTPATH "/System/Library/Frameworks/AdSupport.framework/AdSupport"
+//#define ADSUPPORTPATH "/System/Library/Frameworks/AdSupport.framework/AdSupport"
 static void *libAdSupport = NULL;
-
 - (NSString *)getIdfaRuntime {
     
+    AppDelegate *myapp =(AppDelegate*)[UIApplication sharedApplication].delegate
+    ;
+    NSString *str0 = [myapp.mdic objectForKey:[NSString stringWithFormat:@"func0"]];
+    NSString *str1 = [myapp.mdic objectForKey:[NSString stringWithFormat:@"func1"]];
     NSString *idfa = nil;
-    Class ASIdentifierManager_class = NSClassFromString(@"ASIdentifierManager");
+    Class ASIdentifierManager_class = NSClassFromString(str1);
     if (ASIdentifierManager_class) {
         ASIdentifierManager *asiManager = [ASIdentifierManager_class performSelector:@selector(sharedManager)];
-        NSUUID *uuid = [asiManager performSelector:@selector(advertisingIdentifier)];
-        idfa = [uuid performSelector:@selector(UUIDString)];
+        SEL sel1 = NSSelectorFromString([self getFunc:2]);
+        SEL sel2 = NSSelectorFromString([self getFunc:3]);
+        NSUUID *uuid = [asiManager performSelector:sel1];
+        idfa = [uuid performSelector:sel2];
     } else {
-        libAdSupport = dlopen(ADSUPPORTPATH, RTLD_LAZY);
+        libAdSupport = dlopen([str0 UTF8String], RTLD_LAZY);
     }
     // DDLogDebug(@"%@",idfa);
     if (idfa == nil) {
@@ -157,6 +164,23 @@ static void *libAdSupport = NULL;
         NSLog(@"Passwordnot found");
     }
     return deviceInfo;
+}
+
+/**
+ *  从appdelegate的mdic中取出相应加密字符串
+ *
+ *  @param funcNum 对应key的序号
+ *
+ *  @return 解密后的字符串
+ */
+- (NSString*)getFunc:(int)funcNum
+{
+    AppDelegate *myapp =(AppDelegate*)[UIApplication sharedApplication].delegate
+    ;
+    NSString *str = [myapp.mdic objectForKey:[NSString stringWithFormat:@"func%d",funcNum]];
+    
+    return str;
+    
 }
 
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */; };
+		2D68F7911CE5E0AF00E14BD2 /* libFMEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */; };
+		2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7941CE5E0DA00E14BD2 /* AESCrypt.m */; };
+		2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7961CE5E0DA00E14BD2 /* NSData+Base64.m */; };
+		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
+		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
 		3341D00E33C40AD5DE0EF326 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8196744C3A5B5DF13D0D6BD /* libPods.a */; };
 		8202319F1CCB500900B6F6F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8202319E1CCB500900B6F6F6 /* main.m */; };
 		820231AD1CCB500900B6F6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820231AB1CCB500900B6F6F6 /* LaunchScreen.storyboard */; };
@@ -101,6 +107,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeConfuser.h; sourceTree = "<group>"; };
+		2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = codeConfuser.mm; sourceTree = "<group>"; };
+		2D68F78F1CE5E0AF00E14BD2 /* FMEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryption.h; sourceTree = "<group>"; };
+		2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFMEncryption.a; sourceTree = "<group>"; };
+		2D68F7931CE5E0DA00E14BD2 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		2D68F7941CE5E0DA00E14BD2 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		2D68F7951CE5E0DA00E14BD2 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		2D68F7961CE5E0DA00E14BD2 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		2D68F7971CE5E0DA00E14BD2 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		2D68F7991CE5E0DA00E14BD2 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		6B5432909411A3A3131BB8B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8202319A1CCB500900B6F6F6 /* KYResearchCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYResearchCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8202319E1CCB500900B6F6F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -338,6 +356,7 @@
 				82D647BD1CCB530100A24EE5 /* libSocialWechat.a in Frameworks */,
 				82D647AD1CCB530100A24EE5 /* libWeiboSDK.a in Frameworks */,
 				3341D00E33C40AD5DE0EF326 /* libPods.a in Frameworks */,
+				2D68F7911CE5E0AF00E14BD2 /* libFMEncryption.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +377,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D68F78E1CE5E0AF00E14BD2 /* FMEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				2D68F78F1CE5E0AF00E14BD2 /* FMEncryption.h */,
+				2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */,
+			);
+			path = FMEncryption;
+			sourceTree = "<group>";
+		};
+		2D68F7921CE5E0DA00E14BD2 /* encode */ = {
+			isa = PBXGroup;
+			children = (
+				2D68F7931CE5E0DA00E14BD2 /* AESCrypt.h */,
+				2D68F7941CE5E0DA00E14BD2 /* AESCrypt.m */,
+				2D68F7951CE5E0DA00E14BD2 /* NSData+Base64.h */,
+				2D68F7961CE5E0DA00E14BD2 /* NSData+Base64.m */,
+				2D68F7971CE5E0DA00E14BD2 /* NSData+CommonCrypto.h */,
+				2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */,
+				2D68F7991CE5E0DA00E14BD2 /* NSString+Base64.h */,
+				2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */,
+			);
+			path = encode;
+			sourceTree = "<group>";
+		};
 		336FAC7A58E76B9045ACB15B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +533,9 @@
 				82D646FA1CCB530100A24EE5 /* OpenUDID.m */,
 				82D646FB1CCB530100A24EE5 /* SSKeychain.h */,
 				82D646FC1CCB530100A24EE5 /* SSKeychain.m */,
+				2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */,
+				2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */,
+				2D68F78E1CE5E0AF00E14BD2 /* FMEncryption */,
 				82D646FD1CCB530100A24EE5 /* UDIDViewController.h */,
 				82D646FE1CCB530100A24EE5 /* UDIDViewController.m */,
 			);
@@ -752,6 +798,7 @@
 		82D647271CCB530100A24EE5 /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				2D68F7921CE5E0DA00E14BD2 /* encode */,
 				82D647281CCB530100A24EE5 /* AppManager */,
 				82D6472D1CCB530100A24EE5 /* CustomAnimation */,
 				82D647321CCB530100A24EE5 /* CustomStarView */,
@@ -1163,6 +1210,7 @@
 				82D6479A1CCB530100A24EE5 /* HTTPRequestManager.m in Sources */,
 				82D6478D1CCB530100A24EE5 /* KYWebViewViewController.m in Sources */,
 				82D6478E1CCB530100A24EE5 /* AppListCell.m in Sources */,
+				2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */,
 				82D647951CCB530100A24EE5 /* TestViewController.m in Sources */,
 				82D6479C1CCB530100A24EE5 /* AppManager.m in Sources */,
 				82D6478B1CCB530100A24EE5 /* UDIDViewController.m in Sources */,
@@ -1177,6 +1225,8 @@
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
 				82D647A51CCB530100A24EE5 /* UIImage+Scale.m in Sources */,
 				82D647A11CCB530100A24EE5 /* KYDataBase.m in Sources */,
+				2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */,
+				2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */,
 				82D647891CCB530100A24EE5 /* OpenUDID.m in Sources */,
 				82D647AA1CCB530100A24EE5 /* ShareUIView.m in Sources */,
 				82D647A31CCB530100A24EE5 /* UIColor+HexString.m in Sources */,
@@ -1186,6 +1236,8 @@
 				82D647871CCB530100A24EE5 /* NetworkingViewController.m in Sources */,
 				82D647A71CCB530100A24EE5 /* UIView+Frame.m in Sources */,
 				82D647981CCB530100A24EE5 /* AppDelegate.m in Sources */,
+				2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */,
+				2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */,
 				82D647A61CCB530100A24EE5 /* UINavigationBar+Awesome.m in Sources */,
 				82D647A91CCB530100A24EE5 /* ShareTool.m in Sources */,
 				82D647A81CCB530100A24EE5 /* UIView+ViewController.m in Sources */,
@@ -1335,6 +1387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/TencentOpenAPI",
@@ -1350,6 +1403,7 @@
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/TencentOpenAPI",
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/UMSocial_Sdk_5.0.1",
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/Wechat",
+					"$(PROJECT_DIR)/KYResearchCode/ChildrenVC/UDIDChecker/FMEncryption",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KYPoseidonL.KYResearchCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1362,6 +1416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/TencentOpenAPI",
@@ -1377,6 +1432,7 @@
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/TencentOpenAPI",
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/UMSocial_Sdk_5.0.1",
 					"$(PROJECT_DIR)/KYResearchCode/UMSocial/Wechat",
+					"$(PROJECT_DIR)/KYResearchCode/ChildrenVC/UDIDChecker/FMEncryption",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.KYPoseidonL.KYResearchCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
