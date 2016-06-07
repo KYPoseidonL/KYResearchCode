@@ -13,6 +13,7 @@
 		2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7961CE5E0DA00E14BD2 /* NSData+Base64.m */; };
 		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
 		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
+		2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D811CD91D065FEA0072FF80 /* CommonMethodController.m */; };
 		3341D00E33C40AD5DE0EF326 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8196744C3A5B5DF13D0D6BD /* libPods.a */; };
 		8202319F1CCB500900B6F6F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8202319E1CCB500900B6F6F6 /* main.m */; };
 		820231AD1CCB500900B6F6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820231AB1CCB500900B6F6F6 /* LaunchScreen.storyboard */; };
@@ -119,6 +120,8 @@
 		2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		2D68F7991CE5E0DA00E14BD2 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		2D811CD81D065FEA0072FF80 /* CommonMethodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethodController.h; sourceTree = "<group>"; };
+		2D811CD91D065FEA0072FF80 /* CommonMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodController.m; sourceTree = "<group>"; };
 		6B5432909411A3A3131BB8B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8202319A1CCB500900B6F6F6 /* KYResearchCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYResearchCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8202319E1CCB500900B6F6F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -401,6 +404,15 @@
 			path = encode;
 			sourceTree = "<group>";
 		};
+		2D811CD71D065FC10072FF80 /* 常用公共方法 */ = {
+			isa = PBXGroup;
+			children = (
+				2D811CD81D065FEA0072FF80 /* CommonMethodController.h */,
+				2D811CD91D065FEA0072FF80 /* CommonMethodController.m */,
+			);
+			path = "常用公共方法";
+			sourceTree = "<group>";
+		};
 		336FAC7A58E76B9045ACB15B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +514,7 @@
 			children = (
 				82B11C911CCB67E60041E597 /* ViewController.h */,
 				82B11C921CCB67E60041E597 /* ViewController.m */,
+				2D811CD71D065FC10072FF80 /* 常用公共方法 */,
 				82D646A61CCB530100A24EE5 /* AFN网络请求 */,
 				82D646AA1CCB530100A24EE5 /* UDIDChecker */,
 				82D647011CCB530100A24EE5 /* webView粘贴、复制 */,
@@ -1207,6 +1220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82D6479F1CCB530100A24EE5 /* PulsingHaloLayer.m in Sources */,
+				2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */,
 				82D6479A1CCB530100A24EE5 /* HTTPRequestManager.m in Sources */,
 				82D6478D1CCB530100A24EE5 /* KYWebViewViewController.m in Sources */,
 				82D6478E1CCB530100A24EE5 /* AppListCell.m in Sources */,

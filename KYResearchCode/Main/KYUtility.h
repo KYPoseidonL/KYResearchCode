@@ -84,4 +84,13 @@
  */
 + (BOOL)validateURL:(NSString *)URL;
 
+
+//---------------------------add-------------------------//
++ (NSDictionary *)dictionaryOrderByCharacterWithOriginalArray:(NSArray *)array;
+
++ (NSString *)timeIntervalFromLastTime:(NSString *)lastTime
+                        lastTimeFormat:(NSString *)format1
+                         ToCurrentTime:(NSString *)currentTime
+                     currentTimeFormat:(NSString *)format2;
+
 @end

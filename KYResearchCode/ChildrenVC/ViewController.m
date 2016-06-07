@@ -21,6 +21,7 @@
 #import "ShowCustomAnimationController.h"
 #import "RecordVideoController.h"
 #import "MJRefresh.h"
+#import "CommonMethodController.h"
 
 @interface ViewController ()<UMSocialUIDelegate, UITableViewDataSource, UITableViewDelegate>
 {
@@ -113,7 +114,7 @@
 - (NSArray *)dataList {
     
     if (!_dataList) {
-        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"测试", @"测试", @"测试", @"测试", @"测试", @"测试", @"测试", @"测试", @"测试"];
+        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"常用公共方法", @"测试", @"测试", @"测试", @"测试", @"测试", @"测试", @"测试", @"测试"];
     }
     return _dataList;
 }
@@ -206,6 +207,11 @@
         } break;
         case 9: {
             ShowCustomAnimationController *vc =[[ShowCustomAnimationController alloc] init];
+            vc.title = self.dataList[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
+        case 10: {
+            CommonMethodController *vc =[[CommonMethodController alloc] init];
             vc.title = self.dataList[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         } break;

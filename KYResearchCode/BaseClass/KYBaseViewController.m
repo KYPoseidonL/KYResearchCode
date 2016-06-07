@@ -18,21 +18,27 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = kColor(@"f0efed");
+    
+    
+    if (self.navigationController.viewControllers.count > 1) {
+        [self createBackButton];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)createBackButton {
+
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(0, 0, 60.f, 44.f);
+    backButton.titleLabel.font  = [UIFont systemFontOfSize:16.f];
+    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backButton setTitle:@"返回" forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
 }
 
-/*
-#pragma mark - Navigation
+- (void)backAction {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
 
 @end
