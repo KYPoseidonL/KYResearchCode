@@ -18,9 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+    TICK
     NSArray *arr = @[@"guangzhou", @"shanghai", @"北京", @"henan", @"hainan"];
     NSDictionary *dic = [KYUtility dictionaryOrderByCharacterWithOriginalArray:arr];
     DDLogDebug(@"\n\ndic: %@", dic);
+    TOCK
     
     DDLogDebug(@"\n\nresult: %@", [KYUtility timeIntervalFromLastTime:@"2015年12月8日 15:50"
                                                   lastTimeFormat:@"yyyy年MM月dd日 HH:mm"

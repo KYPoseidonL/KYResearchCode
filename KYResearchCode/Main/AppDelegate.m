@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "AESCrypt.h"
 #import "codeConfuser.h"
+#import "KeyboardManager.h"
 
 @interface AppDelegate ()
 {
@@ -32,6 +33,10 @@
     DDLogError(@"DDLogError");
     DDLogWarn(@"DDLogWarn");
     DDLogInfo(@"DDLogInfo");
+    
+    [IQKeyboardManager sharedManager].enable = true;
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
     
     [self setUpShareMethod];
     

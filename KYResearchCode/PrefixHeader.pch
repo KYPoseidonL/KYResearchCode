@@ -93,5 +93,8 @@ static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 #define kPathOfTemp        NSTemporaryDirectory()
 #define kPathOfDocument    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
+// 获取时间间隔
+#define TICK   CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+#define TOCK   NSLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start);
 
 #endif /* PrefixHeader_pch */

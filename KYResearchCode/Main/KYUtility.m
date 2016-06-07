@@ -8,11 +8,36 @@
 
 #import "KYUtility.h"
 
+#import "AppDelegate.h"
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 
 
 @implementation KYUtility
+
+//NSArray 快速求总和 最大值 最小值 和 平均值
++ (void)getArraySumAndMaxAndMinAndAvg {
+
+    NSArray *array = [NSArray arrayWithObjects:@"2.0", @"2.3", @"3.0", @"4.0", @"10", nil];
+    CGFloat sum = [[array valueForKeyPath:@"@sum.floatValue"] floatValue];
+    CGFloat avg = [[array valueForKeyPath:@"@avg.floatValue"] floatValue];
+    CGFloat max =[[array valueForKeyPath:@"@max.floatValue"] floatValue];
+    CGFloat min =[[array valueForKeyPath:@"@min.floatValue"] floatValue];
+    DDLogDebug(@"%fn%fn%fn%f",sum,avg,max,min);
+}
+
+//让 iOS 应用直接退出
++ (void)exitApplication {
+    
+    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    UIWindow *window = app.window;
+    
+    [UIView animateWithDuration:1.0f animations:^{
+        window.alpha = 0;
+    } completion:^(BOOL finished) {
+        exit(0);
+    }];
+}
 
 + (id)findSubViewOfClass:(Class)aClass inView:(UIView *)view {
     

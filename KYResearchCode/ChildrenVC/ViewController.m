@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.navigationItem.title = @"StudyDemo";
+    self.title = @"StudyDemo";
     
     [self createTabelView];
     
