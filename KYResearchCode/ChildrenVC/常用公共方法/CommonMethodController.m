@@ -28,9 +28,23 @@
                                                   lastTimeFormat:@"yyyy年MM月dd日 HH:mm"
                                                    ToCurrentTime:@"2015/12/08 16:12"
                                                currentTimeFormat:@"yyyy/MM/dd HH:mm"]);
+    
+    [self createNavigationItem];
 }
 
+- (void)createNavigationItem {
 
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    rightButton.frame = CGRectMake(0, 0, 40.f, 44.f);
+    rightButton.uky_acceptEventInterval = 3.f;
+    [rightButton setTitle:@"click" forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(rightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+}
+
+- (void)rightButtonAction:(UIButton *)sender {
+    DDLogDebug(@"测试重复点击");
+}
 
 
 @end

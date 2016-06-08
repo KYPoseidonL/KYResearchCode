@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */; };
 		2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */; };
 		2D68F7911CE5E0AF00E14BD2 /* libFMEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */; };
 		2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7941CE5E0DA00E14BD2 /* AESCrypt.m */; };
@@ -109,6 +110,8 @@
 
 /* Begin PBXFileReference section */
 		2006FF1BCD12F51098C602C0 /* Pods-KYResearchCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYResearchCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYResearchCode/Pods-KYResearchCode.release.xcconfig"; sourceTree = "<group>"; };
+		2D3EAAF31D07B7E40026DF93 /* UIButton+KY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KY.h"; sourceTree = "<group>"; };
+		2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KY.m"; sourceTree = "<group>"; };
 		2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeConfuser.h; sourceTree = "<group>"; };
 		2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = codeConfuser.mm; sourceTree = "<group>"; };
 		2D68F78F1CE5E0AF00E14BD2 /* FMEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryption.h; sourceTree = "<group>"; };
@@ -386,6 +389,15 @@
 				E8BC4321B6A282AEBC1F278D /* libPods-KYResearchCode.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D3EAAEF1D07B79C0026DF93 /* UIControl+Category */ = {
+			isa = PBXGroup;
+			children = (
+				2D3EAAF31D07B7E40026DF93 /* UIButton+KY.h */,
+				2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */,
+			);
+			path = "UIControl+Category";
 			sourceTree = "<group>";
 		};
 		2D68F78E1CE5E0AF00E14BD2 /* FMEncryption */ = {
@@ -802,6 +814,7 @@
 		82D647271CCB530100A24EE5 /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				2D3EAAEF1D07B79C0026DF93 /* UIControl+Category */,
 				2D68F7921CE5E0DA00E14BD2 /* encode */,
 				82D647281CCB530100A24EE5 /* AppManager */,
 				82D6472D1CCB530100A24EE5 /* CustomAnimation */,
@@ -1256,6 +1269,7 @@
 				82D647A91CCB530100A24EE5 /* ShareTool.m in Sources */,
 				82D647A81CCB530100A24EE5 /* UIView+ViewController.m in Sources */,
 				82D647A41CCB530100A24EE5 /* UIImage+Color.m in Sources */,
+				2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */,
 				82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */,
 				82D6478A1CCB530100A24EE5 /* SSKeychain.m in Sources */,
 				82D647A01CCB530100A24EE5 /* StarView.m in Sources */,
