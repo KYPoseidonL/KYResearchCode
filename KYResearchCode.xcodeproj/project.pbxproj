@@ -15,6 +15,12 @@
 		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
 		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
 		2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D811CD91D065FEA0072FF80 /* CommonMethodController.m */; };
+		2DDA716F1D17DAF100C5BA65 /* KYAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71621D17DAF100C5BA65 /* KYAnimationView.m */; };
+		2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71651D17DAF100C5BA65 /* CircleLayer.m */; };
+		2DDA71711D17DAF100C5BA65 /* RectangleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71671D17DAF100C5BA65 /* RectangleLayer.m */; };
+		2DDA71721D17DAF100C5BA65 /* TriangleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71691D17DAF100C5BA65 /* TriangleLayer.m */; };
+		2DDA71731D17DAF100C5BA65 /* WaveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA716B1D17DAF100C5BA65 /* WaveLayer.m */; };
+		2DDA71741D17DAF100C5BA65 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA716E1D17DAF100C5BA65 /* UIColor+Hex.m */; };
 		8202319F1CCB500900B6F6F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8202319E1CCB500900B6F6F6 /* main.m */; };
 		820231AD1CCB500900B6F6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820231AB1CCB500900B6F6F6 /* LaunchScreen.storyboard */; };
 		820231B81CCB500900B6F6F6 /* KYResearchCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820231B71CCB500900B6F6F6 /* KYResearchCodeTests.m */; };
@@ -126,6 +132,18 @@
 		2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		2D811CD81D065FEA0072FF80 /* CommonMethodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethodController.h; sourceTree = "<group>"; };
 		2D811CD91D065FEA0072FF80 /* CommonMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodController.m; sourceTree = "<group>"; };
+		2DDA71611D17DAF100C5BA65 /* KYAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAnimationView.h; sourceTree = "<group>"; };
+		2DDA71621D17DAF100C5BA65 /* KYAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAnimationView.m; sourceTree = "<group>"; };
+		2DDA71641D17DAF100C5BA65 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
+		2DDA71651D17DAF100C5BA65 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
+		2DDA71661D17DAF100C5BA65 /* RectangleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleLayer.h; sourceTree = "<group>"; };
+		2DDA71671D17DAF100C5BA65 /* RectangleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleLayer.m; sourceTree = "<group>"; };
+		2DDA71681D17DAF100C5BA65 /* TriangleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleLayer.h; sourceTree = "<group>"; };
+		2DDA71691D17DAF100C5BA65 /* TriangleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleLayer.m; sourceTree = "<group>"; };
+		2DDA716A1D17DAF100C5BA65 /* WaveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLayer.h; sourceTree = "<group>"; };
+		2DDA716B1D17DAF100C5BA65 /* WaveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLayer.m; sourceTree = "<group>"; };
+		2DDA716D1D17DAF100C5BA65 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		2DDA716E1D17DAF100C5BA65 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		8202319A1CCB500900B6F6F6 /* KYResearchCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYResearchCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8202319E1CCB500900B6F6F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		820231AC1CCB500900B6F6F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -431,6 +449,41 @@
 				2D811CD91D065FEA0072FF80 /* CommonMethodController.m */,
 			);
 			path = "常用公共方法";
+			sourceTree = "<group>";
+		};
+		2DDA71601D17DAF100C5BA65 /* KYAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				2DDA71611D17DAF100C5BA65 /* KYAnimationView.h */,
+				2DDA71621D17DAF100C5BA65 /* KYAnimationView.m */,
+				2DDA71631D17DAF100C5BA65 /* KYLayer */,
+				2DDA716C1D17DAF100C5BA65 /* UIColor+Hex */,
+			);
+			path = KYAnimationView;
+			sourceTree = "<group>";
+		};
+		2DDA71631D17DAF100C5BA65 /* KYLayer */ = {
+			isa = PBXGroup;
+			children = (
+				2DDA71641D17DAF100C5BA65 /* CircleLayer.h */,
+				2DDA71651D17DAF100C5BA65 /* CircleLayer.m */,
+				2DDA71661D17DAF100C5BA65 /* RectangleLayer.h */,
+				2DDA71671D17DAF100C5BA65 /* RectangleLayer.m */,
+				2DDA71681D17DAF100C5BA65 /* TriangleLayer.h */,
+				2DDA71691D17DAF100C5BA65 /* TriangleLayer.m */,
+				2DDA716A1D17DAF100C5BA65 /* WaveLayer.h */,
+				2DDA716B1D17DAF100C5BA65 /* WaveLayer.m */,
+			);
+			path = KYLayer;
+			sourceTree = "<group>";
+		};
+		2DDA716C1D17DAF100C5BA65 /* UIColor+Hex */ = {
+			isa = PBXGroup;
+			children = (
+				2DDA716D1D17DAF100C5BA65 /* UIColor+Hex.h */,
+				2DDA716E1D17DAF100C5BA65 /* UIColor+Hex.m */,
+			);
+			path = "UIColor+Hex";
 			sourceTree = "<group>";
 		};
 		820231911CCB500900B6F6F6 = {
@@ -784,6 +837,7 @@
 			children = (
 				82D6471A1CCB530100A24EE5 /* ShowCustomAnimationController.h */,
 				82D6471B1CCB530100A24EE5 /* ShowCustomAnimationController.m */,
+				2DDA71601D17DAF100C5BA65 /* KYAnimationView */,
 			);
 			path = "自定义动画";
 			sourceTree = "<group>";
@@ -1237,7 +1291,9 @@
 				82D6479A1CCB530100A24EE5 /* HTTPRequestManager.m in Sources */,
 				82D6478D1CCB530100A24EE5 /* KYWebViewViewController.m in Sources */,
 				82D6478E1CCB530100A24EE5 /* AppListCell.m in Sources */,
+				2DDA71731D17DAF100C5BA65 /* WaveLayer.m in Sources */,
 				2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */,
+				2DDA716F1D17DAF100C5BA65 /* KYAnimationView.m in Sources */,
 				82D647951CCB530100A24EE5 /* TestViewController.m in Sources */,
 				82D6479C1CCB530100A24EE5 /* AppManager.m in Sources */,
 				82D6478B1CCB530100A24EE5 /* UDIDViewController.m in Sources */,
@@ -1248,8 +1304,10 @@
 				82D6479B1CCB530100A24EE5 /* HTTPSessionManager.m in Sources */,
 				82D647911CCB530100A24EE5 /* AppModel.m in Sources */,
 				82D6479E1CCB530100A24EE5 /* HaloImg.m in Sources */,
+				2DDA71721D17DAF100C5BA65 /* TriangleLayer.m in Sources */,
 				82B11C931CCB67E60041E597 /* ViewController.m in Sources */,
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
+				2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */,
 				82D647A51CCB530100A24EE5 /* UIImage+Scale.m in Sources */,
 				82D647A11CCB530100A24EE5 /* KYDataBase.m in Sources */,
 				2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */,
@@ -1258,12 +1316,14 @@
 				82D647AA1CCB530100A24EE5 /* ShareUIView.m in Sources */,
 				82D647A31CCB530100A24EE5 /* UIColor+HexString.m in Sources */,
 				82D647991CCB530100A24EE5 /* KYUtility.m in Sources */,
+				2DDA71711D17DAF100C5BA65 /* RectangleLayer.m in Sources */,
 				82D647921CCB530100A24EE5 /* RecordVideoController.m in Sources */,
 				82D647A21CCB530100A24EE5 /* KYWebView.m in Sources */,
 				82D647871CCB530100A24EE5 /* NetworkingViewController.m in Sources */,
 				82D647A71CCB530100A24EE5 /* UIView+Frame.m in Sources */,
 				82D647981CCB530100A24EE5 /* AppDelegate.m in Sources */,
 				2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */,
+				2DDA71741D17DAF100C5BA65 /* UIColor+Hex.m in Sources */,
 				2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */,
 				82D647A61CCB530100A24EE5 /* UINavigationBar+Awesome.m in Sources */,
 				82D647A91CCB530100A24EE5 /* ShareTool.m in Sources */,

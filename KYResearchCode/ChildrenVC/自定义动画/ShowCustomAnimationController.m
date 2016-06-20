@@ -8,11 +8,13 @@
 
 #import "ShowCustomAnimationController.h"
 #import "HaloImg.h"
+#import "KYAnimationView.h"
+#import "UIColor+Hex.h"
 
 #define kCoinOriginalRadius 10.f        //小球原来的半径
 #define kSpreadRadius  20.f             //小球扩散的半径
 
-@interface ShowCustomAnimationController ()
+@interface ShowCustomAnimationController ()<KYAnimatiomViewDelegate>
 {
     BOOL _isChange;
 }
@@ -20,6 +22,8 @@
 
 @property (nonatomic,strong) HaloImg *coinView1;    //圆球从上到下
 @property (nonatomic,strong) HaloImg *coinView2;    //圆球从左到右
+
+@property (nonatomic, strong) KYAnimationView *animationView;
 
 @end
 
@@ -30,7 +34,9 @@
     [super viewDidLoad];
 
 
-    [self setup];
+//    [self setup];
+    
+    [self createAnimationView];
 }
 
 - (HaloImg *)coinView1 {
@@ -70,22 +76,70 @@
     [self coinView2];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-
-    _isChange = !_isChange;
+- (void)createAnimationView {
     
-    if (_isChange) {
-
-        [self.coinView1 dismiss];
-        _coinView1 = nil;
-        [self coinView2];
-        
-    } else {
-    
-        [self.coinView2 dismiss];
-        _coinView2 = nil;
-        [self coinView1];
-    }
+    CGFloat size = 100.0;
+    self.animationView = [[KYAnimationView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.frame)/2 - size/2, CGRectGetHeight(self.view.frame)/2 - size/2, size, size)];
+    _animationView.delegate = self;
+    _animationView.parentFrame = self.view.frame;
+    [self.view addSubview:_animationView];
 }
+
+- (void)completeAnimation {
+    
+    [_animationView removeFromSuperview];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#40e0b0"];
+    
+    // 2
+    UILabel *label = [[UILabel alloc] initWithFrame:self.view.frame];
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:50.0];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.text = @"Welcome";
+    label.transform = CGAffineTransformScale(label.transform, 0.25, 0.25);
+    [self.view addSubview:label];
+    
+    [UIView animateWithDuration:0.4 delay:0.0 usingSpringWithDamping:0.7 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+        label.transform = CGAffineTransformScale(label.transform, 4.0, 4.0);
+        
+    } completion:^(BOOL finished) {
+        [self addTouchButton];
+    }];
+}
+
+- (void)addTouchButton {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)btnClick {
+    self.view.backgroundColor = [UIColor whiteColor];
+    for (UIView *view in self.view.subviews) {
+        [view removeFromSuperview];
+    }
+    self.animationView = nil;
+    [self createAnimationView];
+}
+
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//
+//    _isChange = !_isChange;
+//    
+//    if (_isChange) {
+//
+//        [self.coinView1 dismiss];
+//        _coinView1 = nil;
+//        [self coinView2];
+//        
+//    } else {
+//    
+//        [self.coinView2 dismiss];
+//        _coinView2 = nil;
+//        [self coinView1];
+//    }
+//}
 
 @end
