@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */; };
+		2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5B21D53101600EACBE3 /* KYTextView.m */; };
 		2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */; };
 		2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */; };
 		2D68F7911CE5E0AF00E14BD2 /* libFMEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */; };
@@ -116,6 +118,10 @@
 
 /* Begin PBXFileReference section */
 		2006FF1BCD12F51098C602C0 /* Pods-KYResearchCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYResearchCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYResearchCode/Pods-KYResearchCode.release.xcconfig"; sourceTree = "<group>"; };
+		2D30E5AE1D530F7A00EACBE3 /* KYInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYInputViewController.h; sourceTree = "<group>"; };
+		2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYInputViewController.m; sourceTree = "<group>"; };
+		2D30E5B11D53101600EACBE3 /* KYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTextView.h; sourceTree = "<group>"; };
+		2D30E5B21D53101600EACBE3 /* KYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTextView.m; sourceTree = "<group>"; };
 		2D3EAAF31D07B7E40026DF93 /* UIButton+KY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KY.h"; sourceTree = "<group>"; };
 		2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KY.m"; sourceTree = "<group>"; };
 		2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeConfuser.h; sourceTree = "<group>"; };
@@ -409,6 +415,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */ = {
+			isa = PBXGroup;
+			children = (
+				2D30E5AE1D530F7A00EACBE3 /* KYInputViewController.h */,
+				2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */,
+				2D30E5B11D53101600EACBE3 /* KYTextView.h */,
+				2D30E5B21D53101600EACBE3 /* KYTextView.m */,
+			);
+			path = "微信输入框效果";
+			sourceTree = "<group>";
+		};
 		2D3EAAEF1D07B79C0026DF93 /* UIControl+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +597,7 @@
 				82D647131CCB530100A24EE5 /* 测试类 */,
 				82D647161CCB530100A24EE5 /* 联想输入 */,
 				82D647191CCB530100A24EE5 /* 自定义动画 */,
+				2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */,
 			);
 			path = ChildrenVC;
 			sourceTree = "<group>";
@@ -1327,12 +1345,14 @@
 				2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */,
 				82D647A61CCB530100A24EE5 /* UINavigationBar+Awesome.m in Sources */,
 				82D647A91CCB530100A24EE5 /* ShareTool.m in Sources */,
+				2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */,
 				82D647A81CCB530100A24EE5 /* UIView+ViewController.m in Sources */,
 				82D647A41CCB530100A24EE5 /* UIImage+Color.m in Sources */,
 				2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */,
 				82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */,
 				82D6478A1CCB530100A24EE5 /* SSKeychain.m in Sources */,
 				82D647A01CCB530100A24EE5 /* StarView.m in Sources */,
+				2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */,
 				82D6479D1CCB530100A24EE5 /* UIDevice+ProcessesAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
