@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "TaskModel.h"
 
 @interface TestViewController ()
 
@@ -23,6 +24,16 @@
     
     [self setup];
     
+    [self testModelData];
+    
+}
+
+- (void)testModelData {
+
+    NSDictionary *result = [KYDataService requestDataOfJsonName:@"test"];
+    TaskModel *taskModel = [TaskModel mj_objectWithKeyValues:result];
+    TaskListModel *model = taskModel.resContent.tasklist.firstObject;
+    DDLogDebug(@"%@", model);
 }
 
 - (void)setup {

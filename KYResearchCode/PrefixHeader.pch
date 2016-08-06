@@ -27,6 +27,7 @@
 #import "UIImageView+WebCache.h"
 #import "UIImage+GIF.h"
 #import "UIButton+KY.h"
+#import "KYDataService.h"
 
 
 #if DEBUG

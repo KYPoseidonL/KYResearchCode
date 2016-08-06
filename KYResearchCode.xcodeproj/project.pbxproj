@@ -27,6 +27,9 @@
 		820231AD1CCB500900B6F6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820231AB1CCB500900B6F6F6 /* LaunchScreen.storyboard */; };
 		820231B81CCB500900B6F6F6 /* KYResearchCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820231B71CCB500900B6F6F6 /* KYResearchCodeTests.m */; };
 		820231C31CCB500900B6F6F6 /* KYResearchCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820231C21CCB500900B6F6F6 /* KYResearchCodeUITests.m */; };
+		82A973D51D5583F200F9650A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 82A973D41D5583F200F9650A /* test.json */; };
+		82A973D81D55845200F9650A /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A973D71D55845200F9650A /* TaskModel.m */; };
+		82A973DB1D55865500F9650A /* KYDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A973DA1D55865500F9650A /* KYDataService.m */; };
 		82B11C901CCB67A10041E597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B11C8F1CCB67A10041E597 /* Main.storyboard */; };
 		82B11C931CCB67E60041E597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B11C921CCB67E60041E597 /* ViewController.m */; };
 		82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D646A41CCB530100A24EE5 /* KYBaseViewController.m */; };
@@ -161,6 +164,11 @@
 		820231C21CCB500900B6F6F6 /* KYResearchCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYResearchCodeUITests.m; sourceTree = "<group>"; };
 		820231C41CCB500900B6F6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820231D01CCB505200B6F6F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		82A973D41D5583F200F9650A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		82A973D61D55845200F9650A /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		82A973D71D55845200F9650A /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
+		82A973D91D55865500F9650A /* KYDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDataService.h; sourceTree = "<group>"; };
+		82A973DA1D55865500F9650A /* KYDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDataService.m; sourceTree = "<group>"; };
 		82B11C8F1CCB67A10041E597 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		82B11C911CCB67E60041E597 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		82B11C921CCB67E60041E597 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -573,6 +581,16 @@
 			path = KYResearchCodeUITests;
 			sourceTree = "<group>";
 		};
+		82A973D31D5583F200F9650A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82A973D41D5583F200F9650A /* test.json */,
+				82A973D61D55845200F9650A /* TaskModel.h */,
+				82A973D71D55845200F9650A /* TaskModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		82D646A21CCB530100A24EE5 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -837,6 +855,7 @@
 			children = (
 				82D647141CCB530100A24EE5 /* TestViewController.h */,
 				82D647151CCB530100A24EE5 /* TestViewController.m */,
+				82A973D31D5583F200F9650A /* Model */,
 			);
 			path = "测试类";
 			sourceTree = "<group>";
@@ -895,6 +914,8 @@
 				82D647361CCB530100A24EE5 /* KYDataBase.m */,
 				82D647371CCB530100A24EE5 /* KYWebView.h */,
 				82D647381CCB530100A24EE5 /* KYWebView.m */,
+				82A973D91D55865500F9650A /* KYDataService.h */,
+				82A973DA1D55865500F9650A /* KYDataService.m */,
 				82D647391CCB530100A24EE5 /* singleton.h */,
 				82D6473A1CCB530100A24EE5 /* UIColor+Category */,
 				82D6473D1CCB530100A24EE5 /* UIImage+Category */,
@@ -1220,6 +1241,7 @@
 				82D647B21CCB530100A24EE5 /* UMSocialLocalizable.strings in Resources */,
 				82D647941CCB530100A24EE5 /* DataBaseViewController.xib in Resources */,
 				82D647B81CCB530100A24EE5 /* UMShareEditViewControlleriPad.xib in Resources */,
+				82A973D51D5583F200F9650A /* test.json in Resources */,
 				82D647B41CCB530100A24EE5 /* UMSCommentDetailController.xib in Resources */,
 				82D647B91CCB530100A24EE5 /* UMSLoginViewController.xib in Resources */,
 				82D647B51CCB530100A24EE5 /* UMSCommentInputController.xib in Resources */,
@@ -1325,11 +1347,13 @@
 				2DDA71721D17DAF100C5BA65 /* TriangleLayer.m in Sources */,
 				82B11C931CCB67E60041E597 /* ViewController.m in Sources */,
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
+				82A973DB1D55865500F9650A /* KYDataService.m in Sources */,
 				2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */,
 				82D647A51CCB530100A24EE5 /* UIImage+Scale.m in Sources */,
 				82D647A11CCB530100A24EE5 /* KYDataBase.m in Sources */,
 				2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */,
 				2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */,
+				82A973D81D55845200F9650A /* TaskModel.m in Sources */,
 				82D647891CCB530100A24EE5 /* OpenUDID.m in Sources */,
 				82D647AA1CCB530100A24EE5 /* ShareUIView.m in Sources */,
 				82D647A31CCB530100A24EE5 /* UIColor+HexString.m in Sources */,

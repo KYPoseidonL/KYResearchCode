@@ -1,0 +1,19 @@
+{
+	"resCode" : 0,
+	"resContent" : {
+		"tasklist" : [
+			
+			{
+				"taskid" : 1,
+				"buy" : 1,
+				"taskicon" : "http://www.baidu.com",
+				"title" : "测试1",
+				"limitnum" : 999,
+				"points" : 150,
+				"bundleId" : "com.test.a",	
+			}
+		]	
+		
+	}
+	
+}
