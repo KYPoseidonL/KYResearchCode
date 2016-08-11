@@ -58,29 +58,29 @@
 //    [myRequestData appendData:[end dataUsingEncoding:NSUTF8StringEncoding]];
     
     
-    UIImage *postImg = [UIImage imageNamed:@"appIcon"];
-    NSData *data = UIImagePNGRepresentation(postImg);
-    NSDictionary *parameters = @{@"cmd" : @"uploadFile", @"destdir" : @"/AFN"};
-    
-    NSString *zipPath = [[NSBundle mainBundle] pathForResource:@"t" ofType:@"zip"];
-    NSData *zipData = [[NSData alloc] initWithContentsOfFile:zipPath];
-
-    NSURL *baseURL = [NSURL URLWithString:@"http://192.168.2.155:12345/"];
-    AFHTTPSessionManager *httpManager = [[AFHTTPSessionManager manager] initWithBaseURL:baseURL];
-    httpManager.requestSerializer.timeoutInterval = 30.f;
-    httpManager.responseSerializer = [AFHTTPResponseSerializer serializer];
-
-    [httpManager POST:@"upload.html" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        [formData appendPartWithFileData:data name:@"file" fileName:@"appIcon.png" mimeType:@"image/png"];
-//        [formData appendPartWithFileData:zipData name:@"file" fileName:@"t.zip" mimeType:@"gzip"];
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        id json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-        NSLog(@"%@",json);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-
-    }];
+//    UIImage *postImg = [UIImage imageNamed:@"appIcon"];
+//    NSData *data = UIImagePNGRepresentation(postImg);
+//    NSDictionary *parameters = @{@"cmd" : @"uploadFile", @"destdir" : @"/AFN"};
+//    
+//    NSString *zipPath = [[NSBundle mainBundle] pathForResource:@"t" ofType:@"zip"];
+//    NSData *zipData = [[NSData alloc] initWithContentsOfFile:zipPath];
+//
+//    NSURL *baseURL = [NSURL URLWithString:@"http://192.168.2.155:12345/"];
+//    AFHTTPSessionManager *httpManager = [[AFHTTPSessionManager manager] initWithBaseURL:baseURL];
+//    httpManager.requestSerializer.timeoutInterval = 30.f;
+//    httpManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//
+//    [httpManager POST:@"upload.html" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//        [formData appendPartWithFileData:data name:@"file" fileName:@"appIcon.png" mimeType:@"image/png"];
+////        [formData appendPartWithFileData:zipData name:@"file" fileName:@"t.zip" mimeType:@"gzip"];
+//    } progress:^(NSProgress * _Nonnull uploadProgress) {
+//
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        id json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+//        NSLog(@"%@",json);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//
+//    }];
     
 
 }

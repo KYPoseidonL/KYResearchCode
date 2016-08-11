@@ -10,6 +10,8 @@
 
 @interface CommonMethodController ()
 
+@property (nonatomic, strong) UILabel *testLabel;
+
 @end
 
 @implementation CommonMethodController
@@ -18,18 +20,37 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
+ 
+    
+    [self createNavigationItem];
+    
+    [self setup];
+}
+
+- (void)setup {
+
     TICK
     NSArray *arr = @[@"guangzhou", @"shanghai", @"北京", @"henan", @"hainan"];
     NSDictionary *dic = [KYUtility dictionaryOrderByCharacterWithOriginalArray:arr];
-    DDLogDebug(@"\n\ndic: %@", dic);
+    NSArray *t1 = [dic allKeys].firstObject;
+    NSArray *t2 = [dic allValues].firstObject;
+    NSString *tt1 = [t1 componentsJoinedByString:@","];
+    NSString *tt2 = [t2 componentsJoinedByString:@","];
+    NSString *testResult1 = [NSString stringWithFormat:@"key: %@, value: %@", tt1, tt2];
+    DDLogDebug(@"\n\ntestResult1: %@", testResult1);
     TOCK
     
-    DDLogDebug(@"\n\nresult: %@", [KYUtility timeIntervalFromLastTime:@"2015年12月8日 15:50"
-                                                  lastTimeFormat:@"yyyy年MM月dd日 HH:mm"
-                                                   ToCurrentTime:@"2015/12/08 16:12"
-                                               currentTimeFormat:@"yyyy/MM/dd HH:mm"]);
+    NSString *testResult2 = [KYUtility timeIntervalFromLastTime:@"2015年12月8日 15:50"
+                                            lastTimeFormat:@"yyyy年MM月dd日 HH:mm"
+                                             ToCurrentTime:@"2015/12/08 16:12"
+                                         currentTimeFormat:@"yyyy/MM/dd HH:mm"];
+    DDLogDebug(@"\n\ntestResult2: %@", testResult2);
     
-    [self createNavigationItem];
+    self.testLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.f, 50.f, kScreen_Width-20.f, kScreen_Height-100.f)];
+    self.testLabel.text = [NSString stringWithFormat:@"%@\r\n\n%@", testResult1, testResult2];
+    self.testLabel.numberOfLines = 0;
+    self.testLabel.textColor = [UIColor blackColor];
+    [self.view addSubview:self.testLabel];
 }
 
 - (void)createNavigationItem {
