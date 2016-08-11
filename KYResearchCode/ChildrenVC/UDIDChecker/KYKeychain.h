@@ -75,7 +75,7 @@ extern NSString *const fmSSKeychainWhereKey;
  This was originally inspired by EMKeychain and SDKeychain (both of which are now gone). Thanks to the authors.
  SSKeychain has since switched to a simpler implementation that was abstracted from [SSToolkit](http://sstoolk.it).
  */
-@interface FMKeychain : NSObject
+@interface KYKeychain : NSObject
 
 ///-----------------------
 /// @name Getting Accounts

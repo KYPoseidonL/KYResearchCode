@@ -8,6 +8,7 @@
 
 #import "TestViewController.h"
 #import "TaskModel.h"
+#import "QRCodeGenerator.h"
 
 @interface TestViewController ()
 
@@ -37,6 +38,8 @@
 }
 
 - (void)setup {
+    
+    self.testImageView.image = [QRCodeGenerator qrImageForString:@"http://www.caimimao.cn" imageSize:360.f Topimg:nil withColor:[UIColor blackColor]];
     
     [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"] placeholderImage:nil];
     

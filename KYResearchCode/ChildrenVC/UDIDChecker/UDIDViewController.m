@@ -19,7 +19,7 @@
 //#include <sys/sysctl.h>
 #import <dlfcn.h>
 #import "OpenUDID.h"
-#import "SSKeychain.h"
+#import "KYKeychain.h"
 #import "AppDelegate.h"
 
 @interface UDIDViewController ()
@@ -134,9 +134,9 @@ static void *libAdSupport = NULL;
 - (void)saveDeviceInfoWithKeychain:(NSString *)deviceInfo {
     
     NSError *error = nil;
-    NSString *oldDeviceInfo = [FMKeychain passwordForService:@"www.mobiq.cn" account:@"com.tgleeaudio.taobaobijia" error:&error];
+    NSString *oldDeviceInfo = [KYKeychain passwordForService:@"com.keychaintest.data" account:@"KYPoseidonL" error:&error];
     if ( ![oldDeviceInfo length] ) {
-        [FMKeychain setPassword:deviceInfo forService:@"www.mobiq.cn" account:@"com.tgleeaudio.taobaobijia" error:&error];
+        [KYKeychain setPassword:deviceInfo forService:@"com.keychaintest.data" account:@"KYPoseidonL" error:&error];
         NSLog(@"idfa已存入Keychain");
     }
 }
@@ -159,7 +159,7 @@ static void *libAdSupport = NULL;
 - (NSString *)getDeviceInfoFromKeychain {
     
     NSError *error = nil;
-    NSString *deviceInfo = [FMKeychain passwordForService:@"www.mobiq.cn" account:@"com.tgleeaudio.taobaobijia" error:&error];
+    NSString *deviceInfo = [KYKeychain passwordForService:@"com.keychaintest.data" account:@"KYPoseidonL" error:&error];
     if ([error code] == SSKeychainErrorNotFound) {
         NSLog(@"Passwordnot found");
     }

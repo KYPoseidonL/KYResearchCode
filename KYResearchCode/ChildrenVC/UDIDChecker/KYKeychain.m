@@ -6,7 +6,7 @@
 //  Copyright (c) 2009-2011 Sam Soffes. All rights reserved.
 //
 
-#import "SSKeychain.h"
+#import "KYKeychain.h"
 
 NSString *const fmSSKeychainErrorDomain = @"com.samsoffes.sskeychain";
 
@@ -22,11 +22,11 @@ NSString *const fmSSKeychainWhereKey = @"svce";
 CFTypeRef SSKeychainAccessibilityType = NULL;
 #endif
 
-@interface FMKeychain ()
+@interface KYKeychain ()
 + (NSMutableDictionary *)_queryForService:(NSString *)service account:(NSString *)account;
 @end
 
-@implementation FMKeychain
+@implementation KYKeychain
 
 #pragma mark - Getting Accounts
 + (NSArray *)allAccounts

@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */; };
 		2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5B21D53101600EACBE3 /* KYTextView.m */; };
+		2D36C4FB1D5B0D4500E2FD87 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C4FA1D5B0D4500E2FD87 /* QRCodeViewController.m */; };
+		2D36C50D1D5B0DE500E2FD87 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C4FD1D5B0DE500E2FD87 /* bitstream.c */; };
+		2D36C50E1D5B0DE500E2FD87 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C4FF1D5B0DE500E2FD87 /* mask.c */; };
+		2D36C5101D5B0DE500E2FD87 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5031D5B0DE500E2FD87 /* qrencode.c */; };
+		2D36C5111D5B0DE500E2FD87 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5051D5B0DE500E2FD87 /* qrinput.c */; };
+		2D36C5121D5B0DE500E2FD87 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5071D5B0DE500E2FD87 /* qrspec.c */; };
+		2D36C5131D5B0DE500E2FD87 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5091D5B0DE500E2FD87 /* rscode.c */; };
+		2D36C5141D5B0DE500E2FD87 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C50B1D5B0DE500E2FD87 /* split.c */; };
+		2D36C5191D5B0E0100E2FD87 /* Scan_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5161D5B0E0100E2FD87 /* Scan_VC.m */; };
+		2D36C51A1D5B0E0100E2FD87 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5181D5B0E0100E2FD87 /* ViewController2.m */; };
 		2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */; };
 		2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */; };
 		2D68F7911CE5E0AF00E14BD2 /* libFMEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */; };
@@ -17,6 +27,7 @@
 		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
 		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
 		2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D811CD91D065FEA0072FF80 /* CommonMethodController.m */; };
+		2DB5CDE51D5C46100025013E /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */; };
 		2DDA716F1D17DAF100C5BA65 /* KYAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71621D17DAF100C5BA65 /* KYAnimationView.m */; };
 		2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71651D17DAF100C5BA65 /* CircleLayer.m */; };
 		2DDA71711D17DAF100C5BA65 /* RectangleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71671D17DAF100C5BA65 /* RectangleLayer.m */; };
@@ -36,7 +47,7 @@
 		82D647871CCB530100A24EE5 /* NetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D646A81CCB530100A24EE5 /* NetworkingViewController.m */; };
 		82D647881CCB530100A24EE5 /* t.zip in Resources */ = {isa = PBXBuildFile; fileRef = 82D646A91CCB530100A24EE5 /* t.zip */; };
 		82D647891CCB530100A24EE5 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D646FA1CCB530100A24EE5 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		82D6478A1CCB530100A24EE5 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D646FC1CCB530100A24EE5 /* SSKeychain.m */; };
+		82D6478A1CCB530100A24EE5 /* KYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D646FC1CCB530100A24EE5 /* KYKeychain.m */; };
 		82D6478B1CCB530100A24EE5 /* UDIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D646FE1CCB530100A24EE5 /* UDIDViewController.m */; };
 		82D6478D1CCB530100A24EE5 /* KYWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D647031CCB530100A24EE5 /* KYWebViewViewController.m */; };
 		82D6478E1CCB530100A24EE5 /* AppListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D647061CCB530100A24EE5 /* AppListCell.m */; };
@@ -125,6 +136,26 @@
 		2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYInputViewController.m; sourceTree = "<group>"; };
 		2D30E5B11D53101600EACBE3 /* KYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTextView.h; sourceTree = "<group>"; };
 		2D30E5B21D53101600EACBE3 /* KYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTextView.m; sourceTree = "<group>"; };
+		2D36C4F91D5B0D4500E2FD87 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		2D36C4FA1D5B0D4500E2FD87 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		2D36C4FD1D5B0DE500E2FD87 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		2D36C4FE1D5B0DE500E2FD87 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		2D36C4FF1D5B0DE500E2FD87 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		2D36C5001D5B0DE500E2FD87 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		2D36C5031D5B0DE500E2FD87 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		2D36C5041D5B0DE500E2FD87 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		2D36C5051D5B0DE500E2FD87 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		2D36C5061D5B0DE500E2FD87 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		2D36C5071D5B0DE500E2FD87 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		2D36C5081D5B0DE500E2FD87 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		2D36C5091D5B0DE500E2FD87 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		2D36C50A1D5B0DE500E2FD87 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		2D36C50B1D5B0DE500E2FD87 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		2D36C50C1D5B0DE500E2FD87 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		2D36C5151D5B0E0100E2FD87 /* Scan_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scan_VC.h; sourceTree = "<group>"; };
+		2D36C5161D5B0E0100E2FD87 /* Scan_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scan_VC.m; sourceTree = "<group>"; };
+		2D36C5171D5B0E0100E2FD87 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		2D36C5181D5B0E0100E2FD87 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		2D3EAAF31D07B7E40026DF93 /* UIButton+KY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KY.h"; sourceTree = "<group>"; };
 		2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KY.m"; sourceTree = "<group>"; };
 		2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeConfuser.h; sourceTree = "<group>"; };
@@ -141,6 +172,8 @@
 		2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		2D811CD81D065FEA0072FF80 /* CommonMethodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethodController.h; sourceTree = "<group>"; };
 		2D811CD91D065FEA0072FF80 /* CommonMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodController.m; sourceTree = "<group>"; };
+		2DB5CDE31D5C46100025013E /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
 		2DDA71611D17DAF100C5BA65 /* KYAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAnimationView.h; sourceTree = "<group>"; };
 		2DDA71621D17DAF100C5BA65 /* KYAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAnimationView.m; sourceTree = "<group>"; };
 		2DDA71641D17DAF100C5BA65 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
@@ -245,8 +278,8 @@
 		82D646F81CCB530100A24EE5 /* USBSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBSpec.h; sourceTree = "<group>"; };
 		82D646F91CCB530100A24EE5 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		82D646FA1CCB530100A24EE5 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
-		82D646FB1CCB530100A24EE5 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
-		82D646FC1CCB530100A24EE5 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		82D646FB1CCB530100A24EE5 /* KYKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYKeychain.h; sourceTree = "<group>"; };
+		82D646FC1CCB530100A24EE5 /* KYKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYKeychain.m; sourceTree = "<group>"; };
 		82D646FD1CCB530100A24EE5 /* UDIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDIDViewController.h; sourceTree = "<group>"; };
 		82D646FE1CCB530100A24EE5 /* UDIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDIDViewController.m; sourceTree = "<group>"; };
 		82D647021CCB530100A24EE5 /* KYWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYWebViewViewController.h; sourceTree = "<group>"; };
@@ -434,6 +467,29 @@
 			path = "微信输入框效果";
 			sourceTree = "<group>";
 		};
+		2D36C4FC1D5B0DE500E2FD87 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				2DB5CDE31D5C46100025013E /* QRCodeGenerator.h */,
+				2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */,
+				2D36C4FD1D5B0DE500E2FD87 /* bitstream.c */,
+				2D36C4FE1D5B0DE500E2FD87 /* bitstream.h */,
+				2D36C4FF1D5B0DE500E2FD87 /* mask.c */,
+				2D36C5001D5B0DE500E2FD87 /* mask.h */,
+				2D36C5031D5B0DE500E2FD87 /* qrencode.c */,
+				2D36C5041D5B0DE500E2FD87 /* qrencode.h */,
+				2D36C5051D5B0DE500E2FD87 /* qrinput.c */,
+				2D36C5061D5B0DE500E2FD87 /* qrinput.h */,
+				2D36C5071D5B0DE500E2FD87 /* qrspec.c */,
+				2D36C5081D5B0DE500E2FD87 /* qrspec.h */,
+				2D36C5091D5B0DE500E2FD87 /* rscode.c */,
+				2D36C50A1D5B0DE500E2FD87 /* rscode.h */,
+				2D36C50B1D5B0DE500E2FD87 /* split.c */,
+				2D36C50C1D5B0DE500E2FD87 /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
 		2D3EAAEF1D07B79C0026DF93 /* UIControl+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +497,20 @@
 				2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */,
 			);
 			path = "UIControl+Category";
+			sourceTree = "<group>";
+		};
+		2D51B7E51D5B09DB004CE74F /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				2D36C4F91D5B0D4500E2FD87 /* QRCodeViewController.h */,
+				2D36C4FA1D5B0D4500E2FD87 /* QRCodeViewController.m */,
+				2D36C5151D5B0E0100E2FD87 /* Scan_VC.h */,
+				2D36C5161D5B0E0100E2FD87 /* Scan_VC.m */,
+				2D36C5171D5B0E0100E2FD87 /* ViewController2.h */,
+				2D36C5181D5B0E0100E2FD87 /* ViewController2.m */,
+				2D36C4FC1D5B0DE500E2FD87 /* libqrencode */,
+			);
+			path = "二维码";
 			sourceTree = "<group>";
 		};
 		2D68F78E1CE5E0AF00E14BD2 /* FMEncryption */ = {
@@ -616,6 +686,7 @@
 				82D647161CCB530100A24EE5 /* 联想输入 */,
 				82D647191CCB530100A24EE5 /* 自定义动画 */,
 				2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */,
+				2D51B7E51D5B09DB004CE74F /* 二维码 */,
 			);
 			path = ChildrenVC;
 			sourceTree = "<group>";
@@ -636,8 +707,8 @@
 				82D646AB1CCB530100A24EE5 /* IOKit */,
 				82D646F91CCB530100A24EE5 /* OpenUDID.h */,
 				82D646FA1CCB530100A24EE5 /* OpenUDID.m */,
-				82D646FB1CCB530100A24EE5 /* SSKeychain.h */,
-				82D646FC1CCB530100A24EE5 /* SSKeychain.m */,
+				82D646FB1CCB530100A24EE5 /* KYKeychain.h */,
+				82D646FC1CCB530100A24EE5 /* KYKeychain.m */,
 				2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */,
 				2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */,
 				2D68F78E1CE5E0AF00E14BD2 /* FMEncryption */,
@@ -1337,8 +1408,10 @@
 				82D647951CCB530100A24EE5 /* TestViewController.m in Sources */,
 				82D6479C1CCB530100A24EE5 /* AppManager.m in Sources */,
 				82D6478B1CCB530100A24EE5 /* UDIDViewController.m in Sources */,
+				2D36C50E1D5B0DE500E2FD87 /* mask.c in Sources */,
 				82D647901CCB530100A24EE5 /* AppListViewController.m in Sources */,
 				82D647961CCB530100A24EE5 /* UserLoginViewController.m in Sources */,
+				2DB5CDE51D5C46100025013E /* QRCodeGenerator.m in Sources */,
 				8202319F1CCB500900B6F6F6 /* main.m in Sources */,
 				82D647931CCB530100A24EE5 /* DataBaseViewController.m in Sources */,
 				82D6479B1CCB530100A24EE5 /* HTTPSessionManager.m in Sources */,
@@ -1349,32 +1422,41 @@
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
 				82A973DB1D55865500F9650A /* KYDataService.m in Sources */,
 				2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */,
+				2D36C5101D5B0DE500E2FD87 /* qrencode.c in Sources */,
 				82D647A51CCB530100A24EE5 /* UIImage+Scale.m in Sources */,
 				82D647A11CCB530100A24EE5 /* KYDataBase.m in Sources */,
 				2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */,
+				2D36C50D1D5B0DE500E2FD87 /* bitstream.c in Sources */,
+				2D36C51A1D5B0E0100E2FD87 /* ViewController2.m in Sources */,
 				2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */,
 				82A973D81D55845200F9650A /* TaskModel.m in Sources */,
 				82D647891CCB530100A24EE5 /* OpenUDID.m in Sources */,
+				2D36C5191D5B0E0100E2FD87 /* Scan_VC.m in Sources */,
 				82D647AA1CCB530100A24EE5 /* ShareUIView.m in Sources */,
 				82D647A31CCB530100A24EE5 /* UIColor+HexString.m in Sources */,
+				2D36C4FB1D5B0D4500E2FD87 /* QRCodeViewController.m in Sources */,
 				82D647991CCB530100A24EE5 /* KYUtility.m in Sources */,
 				2DDA71711D17DAF100C5BA65 /* RectangleLayer.m in Sources */,
 				82D647921CCB530100A24EE5 /* RecordVideoController.m in Sources */,
 				82D647A21CCB530100A24EE5 /* KYWebView.m in Sources */,
+				2D36C5131D5B0DE500E2FD87 /* rscode.c in Sources */,
 				82D647871CCB530100A24EE5 /* NetworkingViewController.m in Sources */,
 				82D647A71CCB530100A24EE5 /* UIView+Frame.m in Sources */,
 				82D647981CCB530100A24EE5 /* AppDelegate.m in Sources */,
+				2D36C5121D5B0DE500E2FD87 /* qrspec.c in Sources */,
 				2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */,
 				2DDA71741D17DAF100C5BA65 /* UIColor+Hex.m in Sources */,
 				2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */,
 				82D647A61CCB530100A24EE5 /* UINavigationBar+Awesome.m in Sources */,
 				82D647A91CCB530100A24EE5 /* ShareTool.m in Sources */,
+				2D36C5141D5B0DE500E2FD87 /* split.c in Sources */,
 				2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */,
 				82D647A81CCB530100A24EE5 /* UIView+ViewController.m in Sources */,
 				82D647A41CCB530100A24EE5 /* UIImage+Color.m in Sources */,
 				2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */,
 				82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */,
-				82D6478A1CCB530100A24EE5 /* SSKeychain.m in Sources */,
+				2D36C5111D5B0DE500E2FD87 /* qrinput.c in Sources */,
+				82D6478A1CCB530100A24EE5 /* KYKeychain.m in Sources */,
 				82D647A01CCB530100A24EE5 /* StarView.m in Sources */,
 				2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */,
 				82D6479D1CCB530100A24EE5 /* UIDevice+ProcessesAdditions.m in Sources */,
