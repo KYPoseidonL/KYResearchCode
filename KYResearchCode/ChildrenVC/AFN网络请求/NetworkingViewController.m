@@ -11,7 +11,6 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "AFHTTPSessionManager.h"
-#import "SVProgressHUD.h"
 
 @interface NetworkingViewController ()
 

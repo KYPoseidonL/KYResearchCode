@@ -34,6 +34,10 @@
     DDLogWarn(@"DDLogWarn");
     DDLogInfo(@"DDLogInfo");
     
+    // 初始化提示框样式
+    [SVProgressHUD setBackgroundColor:[UIColor colorWithHexString:@"333333"]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    
     [IQKeyboardManager sharedManager].enable = true;
     [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;

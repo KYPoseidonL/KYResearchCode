@@ -30,6 +30,7 @@
 #import "UIImage+GIF.h"
 #import "UIButton+KY.h"
 #import "KYDataService.h"
+#import "SVProgressHUD.h"
 
 
 #if DEBUG
