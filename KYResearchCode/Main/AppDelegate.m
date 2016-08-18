@@ -35,6 +35,7 @@
     DDLogInfo(@"DDLogInfo");
     
     // 初始化提示框样式
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
     [SVProgressHUD setBackgroundColor:[UIColor colorWithHexString:@"333333"]];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     
