@@ -40,7 +40,8 @@ static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 
 
 
-
+#define kWeakSelf typeof(self) __weak weakSelf = self;
+#define kStrongSelf typeof(weakSelf) __strong strongSelf = weakSelf;
 
 //-------------------获取设备大小-------------------------
 

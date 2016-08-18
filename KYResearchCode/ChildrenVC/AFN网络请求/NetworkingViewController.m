@@ -11,8 +11,11 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "AFHTTPSessionManager.h"
+#import "SVProgressHUD.h"
 
 @interface NetworkingViewController ()
+
+@property (nonatomic, strong) UILabel *showMessageLabel;
 
 @end
 
@@ -22,67 +25,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self requestData];
+    [self setup];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeClear];
+    [SVProgressHUD showWithStatus:@"努力加载中..."];
+    [self performSelector:@selector(requestData) withObject:nil afterDelay:1.f];
+}
+
+- (void)setup {
+    
+    self.showMessageLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.f, 50.f, kScreen_Width-20.f, 200.f)];
+    self.showMessageLabel.numberOfLines = 0;
+    [self.view addSubview:self.showMessageLabel];
+    
 }
 
 - (void)requestData {
     
-    //分界线的标识符
-//    NSString *TWITTERFON_FORM_BOUNDARY = @"AaB03x";
-//    NSString *content=[[NSString alloc]initWithFormat:@"multipart/form-data; boundary=%@",TWITTERFON_FORM_BOUNDARY];
-//    
-//    //分界线 --AaB03x
-//    NSString *MPboundary=[[NSString alloc]initWithFormat:@"--%@",TWITTERFON_FORM_BOUNDARY];
-//    
-//    //结束符 AaB03x--
-//    NSString *endMPboundary=[[NSString alloc]initWithFormat:@"%@--",MPboundary];
-//    //声明结束符：--AaB03x--
-//    NSString *end=[[NSString alloc]initWithFormat:@"\r\n%@",endMPboundary];
-//    //body内容
-//    NSMutableString *body=[NSMutableString stringWithString:@""];
-//    /********************添加字段内容*************************/
-//    ////添加分界线，换行
-//    [body appendFormat:@"%@\r\n",MPboundary];
-//    //声明pic字段，文件名为boris.png
-//    [body appendFormat:@"Content-Disposition: form-data; name=\"file\"; filename=\"%@\"\r\n",[[NSBundle mainBundle] pathForResource:@"Default-Portrait" ofType:@"png"]];
-//    //声明上传文件的格式
-//    [body appendFormat:@"Content-Type:image/png\r\n\r\n"];
-//    
-//    UIImage *img=[UIImage imageNamed:@"Default-Portrait.png"];
-//    /*********************发送请求的数据****************************/
-//    NSMutableData *myRequestData=[NSMutableData data];
-//    [myRequestData appendData:[body dataUsingEncoding:NSUTF8StringEncoding]];
-//    //添加图片
-//    [myRequestData appendData:UIImagePNGRepresentation(img)];
-//    //添加结束符
-//    [myRequestData appendData:[end dataUsingEncoding:NSUTF8StringEncoding]];
+    NSString *urlString = @"http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=5slgyqGDENN7Sy7pw29IUvrZ";
     
-    
-//    UIImage *postImg = [UIImage imageNamed:@"appIcon"];
-//    NSData *data = UIImagePNGRepresentation(postImg);
-//    NSDictionary *parameters = @{@"cmd" : @"uploadFile", @"destdir" : @"/AFN"};
-//    
-//    NSString *zipPath = [[NSBundle mainBundle] pathForResource:@"t" ofType:@"zip"];
-//    NSData *zipData = [[NSData alloc] initWithContentsOfFile:zipPath];
-//
-//    NSURL *baseURL = [NSURL URLWithString:@"http://192.168.2.155:12345/"];
-//    AFHTTPSessionManager *httpManager = [[AFHTTPSessionManager manager] initWithBaseURL:baseURL];
-//    httpManager.requestSerializer.timeoutInterval = 30.f;
-//    httpManager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//
-//    [httpManager POST:@"upload.html" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-//        [formData appendPartWithFileData:data name:@"file" fileName:@"appIcon.png" mimeType:@"image/png"];
-////        [formData appendPartWithFileData:zipData name:@"file" fileName:@"t.zip" mimeType:@"gzip"];
-//    } progress:^(NSProgress * _Nonnull uploadProgress) {
-//
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        id json = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-//        NSLog(@"%@",json);
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//
-//    }];
-    
-
+    kWeakSelf;
+    [[HTTPRequestManager sharedHTTPRequestManager] getJosonWithURLString:urlString parameters:nil success:^(id dic) {
+        kStrongSelf;
+        [SVProgressHUD dismiss];
+        strongSelf.showMessageLabel.text = [NSString stringWithFormat:@"%@", [dic mj_JSONString]];
+        
+    } fail:^(NSError *error) {
+        
+    }];
 }
 
 

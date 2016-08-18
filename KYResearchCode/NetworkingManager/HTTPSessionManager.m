@@ -8,7 +8,7 @@
 
 #import "HTTPSessionManager.h"
 
-#define kBaseURL    @"http://192.168.2.155:12345/"
+#define kBaseURL    @""
 static HTTPSessionManager *_manager = nil;
 
 @interface HTTPSessionManager ()
@@ -26,12 +26,8 @@ static HTTPSessionManager *_manager = nil;
         
         NSString *baseURL =  [kBaseURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         _manager = [[HTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:baseURL]];
-//        _manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
         _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain" ,@"application/json", @"text/json", @"text/javascript",@"text/html",@"image/png",@"image/jpeg", nil];
         _manager.requestSerializer.timeoutInterval = 30.f;
-        NSString *TWITTERFON_FORM_BOUNDARY = @"----WIKIfadsfsfdfa";
-        NSString *content=[[NSString alloc]initWithFormat:@"multipart/form-data; boundary=%@",TWITTERFON_FORM_BOUNDARY];
-        [_manager.requestSerializer setValue:content forHTTPHeaderField:@"Content-Type"];
     });
     
     return _manager;
