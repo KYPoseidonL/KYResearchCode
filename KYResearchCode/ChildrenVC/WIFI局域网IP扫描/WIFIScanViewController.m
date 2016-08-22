@@ -49,6 +49,7 @@ static NSString *WIFIScanCellIdentify = @"WIFIScanCellIdentify";
 }
 
 #pragma mark - Private Methods
+//
 - (void)pingAndMacAddress {
     NSString *macAddress = [NtFinder macAddress];
     NSLog(@"local mac address = %@", macAddress);
