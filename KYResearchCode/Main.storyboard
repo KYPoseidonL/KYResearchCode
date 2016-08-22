@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nrn-jf-Dyy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-360.80000000000001" y="1465.9133333333334"/>
+            <point key="canvasLocation" x="-350.5" y="1499.5"/>
         </scene>
         <!--Code View Controller-->
         <scene sceneID="ijb-yj-a1p">
@@ -357,6 +357,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTD-Bk-PNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="1478"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="7wF-ZA-NBT">
+            <objects>
+                <viewController storyboardIdentifier="WIFIScanID" id="a6k-AR-3Cl" customClass="WIFIScanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lbn-FK-4E7"/>
+                        <viewControllerLayoutGuide type="bottom" id="chn-ik-q2P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gsw-Ph-ZtU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vQA-QT-gBq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="a6k-AR-3Cl" id="sbY-VU-vbt"/>
+                                    <outlet property="delegate" destination="a6k-AR-3Cl" id="6h6-XK-fZx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vQA-QT-gBq" secondAttribute="trailing" id="6vU-wD-CFq"/>
+                            <constraint firstItem="vQA-QT-gBq" firstAttribute="leading" secondItem="Gsw-Ph-ZtU" secondAttribute="leading" id="ACf-Yp-XOd"/>
+                            <constraint firstItem="chn-ik-q2P" firstAttribute="top" secondItem="vQA-QT-gBq" secondAttribute="bottom" id="DNs-Hw-dHS"/>
+                            <constraint firstItem="vQA-QT-gBq" firstAttribute="top" secondItem="Gsw-Ph-ZtU" secondAttribute="top" id="l8I-C2-F8e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="wifiScanTableView" destination="vQA-QT-gBq" id="bCs-c1-cY2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzo-F8-Udg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="1478"/>
         </scene>
     </scenes>
     <resources>

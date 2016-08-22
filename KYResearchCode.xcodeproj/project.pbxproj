@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D05AF731D6AFFD9006D6DC7 /* NtFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF6D1D6AFFD9006D6DC7 /* NtFinder.m */; };
+		2D05AF741D6AFFD9006D6DC7 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF701D6AFFD9006D6DC7 /* SimplePing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2D05AF751D6AFFD9006D6DC7 /* SimplePingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF721D6AFFD9006D6DC7 /* SimplePingHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2D05AF781D6AFFF7006D6DC7 /* WIFIScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */; };
 		2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */; };
 		2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5B21D53101600EACBE3 /* KYTextView.m */; };
 		2D36C4FB1D5B0D4500E2FD87 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C4FA1D5B0D4500E2FD87 /* QRCodeViewController.m */; };
@@ -132,6 +136,18 @@
 
 /* Begin PBXFileReference section */
 		2006FF1BCD12F51098C602C0 /* Pods-KYResearchCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYResearchCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYResearchCode/Pods-KYResearchCode.release.xcconfig"; sourceTree = "<group>"; };
+		2D05AF691D6AFFD9006D6DC7 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		2D05AF6A1D6AFFD9006D6DC7 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
+		2D05AF6B1D6AFFD9006D6DC7 /* if_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_types.h; sourceTree = "<group>"; };
+		2D05AF6C1D6AFFD9006D6DC7 /* NtFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NtFinder.h; sourceTree = "<group>"; };
+		2D05AF6D1D6AFFD9006D6DC7 /* NtFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NtFinder.m; sourceTree = "<group>"; };
+		2D05AF6E1D6AFFD9006D6DC7 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		2D05AF6F1D6AFFD9006D6DC7 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		2D05AF701D6AFFD9006D6DC7 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		2D05AF711D6AFFD9006D6DC7 /* SimplePingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePingHelper.h; sourceTree = "<group>"; };
+		2D05AF721D6AFFD9006D6DC7 /* SimplePingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePingHelper.m; sourceTree = "<group>"; };
+		2D05AF761D6AFFF7006D6DC7 /* WIFIScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIScanViewController.h; sourceTree = "<group>"; };
+		2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIScanViewController.m; sourceTree = "<group>"; };
 		2D30E5AE1D530F7A00EACBE3 /* KYInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYInputViewController.h; sourceTree = "<group>"; };
 		2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYInputViewController.m; sourceTree = "<group>"; };
 		2D30E5B11D53101600EACBE3 /* KYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTextView.h; sourceTree = "<group>"; };
@@ -456,6 +472,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D05AF671D6AFFCF006D6DC7 /* WIFI局域网IP扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				2D05AF761D6AFFF7006D6DC7 /* WIFIScanViewController.h */,
+				2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */,
+				2D05AF681D6AFFD9006D6DC7 /* WlanScan */,
+			);
+			path = "WIFI局域网IP扫描";
+			sourceTree = "<group>";
+		};
+		2D05AF681D6AFFD9006D6DC7 /* WlanScan */ = {
+			isa = PBXGroup;
+			children = (
+				2D05AF691D6AFFD9006D6DC7 /* if_arp.h */,
+				2D05AF6A1D6AFFD9006D6DC7 /* if_ether.h */,
+				2D05AF6B1D6AFFD9006D6DC7 /* if_types.h */,
+				2D05AF6C1D6AFFD9006D6DC7 /* NtFinder.h */,
+				2D05AF6D1D6AFFD9006D6DC7 /* NtFinder.m */,
+				2D05AF6E1D6AFFD9006D6DC7 /* route.h */,
+				2D05AF6F1D6AFFD9006D6DC7 /* SimplePing.h */,
+				2D05AF701D6AFFD9006D6DC7 /* SimplePing.m */,
+				2D05AF711D6AFFD9006D6DC7 /* SimplePingHelper.h */,
+				2D05AF721D6AFFD9006D6DC7 /* SimplePingHelper.m */,
+			);
+			path = WlanScan;
+			sourceTree = "<group>";
+		};
 		2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,6 +730,7 @@
 				82D647191CCB530100A24EE5 /* 自定义动画 */,
 				2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */,
 				2D51B7E51D5B09DB004CE74F /* 二维码 */,
+				2D05AF671D6AFFCF006D6DC7 /* WIFI局域网IP扫描 */,
 			);
 			path = ChildrenVC;
 			sourceTree = "<group>";
@@ -1420,6 +1464,7 @@
 				2DDA71721D17DAF100C5BA65 /* TriangleLayer.m in Sources */,
 				82B11C931CCB67E60041E597 /* ViewController.m in Sources */,
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
+				2D05AF741D6AFFD9006D6DC7 /* SimplePing.m in Sources */,
 				82A973DB1D55865500F9650A /* KYDataService.m in Sources */,
 				2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */,
 				2D36C5101D5B0DE500E2FD87 /* qrencode.c in Sources */,
@@ -1427,6 +1472,7 @@
 				82D647A11CCB530100A24EE5 /* KYDataBase.m in Sources */,
 				2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */,
 				2D36C50D1D5B0DE500E2FD87 /* bitstream.c in Sources */,
+				2D05AF781D6AFFF7006D6DC7 /* WIFIScanViewController.m in Sources */,
 				2D36C51A1D5B0E0100E2FD87 /* ViewController2.m in Sources */,
 				2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */,
 				82A973D81D55845200F9650A /* TaskModel.m in Sources */,
@@ -1455,11 +1501,13 @@
 				82D647A41CCB530100A24EE5 /* UIImage+Color.m in Sources */,
 				2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */,
 				82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */,
+				2D05AF751D6AFFD9006D6DC7 /* SimplePingHelper.m in Sources */,
 				2D36C5111D5B0DE500E2FD87 /* qrinput.c in Sources */,
 				82D6478A1CCB530100A24EE5 /* KYKeychain.m in Sources */,
 				82D647A01CCB530100A24EE5 /* StarView.m in Sources */,
 				2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */,
 				82D6479D1CCB530100A24EE5 /* UIDevice+ProcessesAdditions.m in Sources */,
+				2D05AF731D6AFFD9006D6DC7 /* NtFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
