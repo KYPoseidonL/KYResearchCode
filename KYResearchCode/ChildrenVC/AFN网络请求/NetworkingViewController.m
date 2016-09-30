@@ -41,12 +41,12 @@
 - (void)requestData {
     
     NSString *urlString = @"http://api.map.baidu.com/telematics/v3/weather?location=%E5%8C%97%E4%BA%AC&output=json&ak=5slgyqGDENN7Sy7pw29IUvrZ";
-    
-    kWeakSelf;
+
+    @weakify(self);
     [[HTTPRequestManager sharedHTTPRequestManager] getJosonWithURLString:urlString parameters:nil success:^(id dic) {
-        kStrongSelf;
+        @strongify(self);
         [SVProgressHUD dismiss];
-        strongSelf.showMessageLabel.text = [NSString stringWithFormat:@"%@", [dic mj_JSONString]];
+        self.showMessageLabel.text = [NSString stringWithFormat:@"%@", [dic mj_JSONString]];
         
     } fail:^(NSError *error) {
         

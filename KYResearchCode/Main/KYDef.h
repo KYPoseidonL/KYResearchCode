@@ -9,7 +9,7 @@
 #ifndef KYDef_h
 #define KYDef_h
 
-#ifndef	weakify
+#ifndef    weakify
 #if __has_feature(objc_arc)
 
 #define weakify( x ) \
@@ -29,7 +29,7 @@ _Pragma("clang diagnostic pop")
 #endif
 #endif
 
-#ifndef	strongify
+#ifndef    strongify
 #if __has_feature(objc_arc)
 
 #define strongify( x ) \
