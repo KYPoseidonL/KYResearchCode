@@ -37,9 +37,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self saveDeviceInfoWithKeychain:[self getIdfaRuntime]];
-    [self saveDeviceInfoWithUserdefult:[self getIdfaRuntime]];
-    self.idfaLabel.text = [NSString stringWithFormat:@"IDFA:  %@",[self getIdfaRuntime]];
+    [self saveDeviceInfoWithKeychain:[self getIdfa]];
+    [self saveDeviceInfoWithUserdefult:[self getIdfa]];
+    self.idfaLabel.text = [NSString stringWithFormat:@"IDFA:  %@",[self getIdfa]];
     self.idfvLabel.text = [NSString stringWithFormat:@"IDFV:  %@",[self getIDFV]];
     self.openUDIDLabel.text = [NSString stringWithFormat:@"OPENUDID:  %@",[self getOpenUDID]];
     
@@ -90,30 +90,9 @@ NSString *getUdid() {
 
 
 //--------------------2.IDFA广告标示符--------------------//
-//#define ADSUPPORTPATH "/System/Library/Frameworks/AdSupport.framework/AdSupport"
-static void *libAdSupport = NULL;
-- (NSString *)getIdfaRuntime {
+- (NSString *)getIdfa {
     
-    AppDelegate *myapp =(AppDelegate*)[UIApplication sharedApplication].delegate
-    ;
-    NSString *str0 = [myapp.mdic objectForKey:[NSString stringWithFormat:@"func0"]];
-    NSString *str1 = [myapp.mdic objectForKey:[NSString stringWithFormat:@"func1"]];
-    NSString *idfa = nil;
-    Class ASIdentifierManager_class = NSClassFromString(str1);
-    if (ASIdentifierManager_class) {
-        ASIdentifierManager *asiManager = [ASIdentifierManager_class performSelector:@selector(sharedManager)];
-        SEL sel1 = NSSelectorFromString([self getFunc:2]);
-        SEL sel2 = NSSelectorFromString([self getFunc:3]);
-        NSUUID *uuid = [asiManager performSelector:sel1];
-        idfa = [uuid performSelector:sel2];
-    } else {
-        libAdSupport = dlopen([str0 UTF8String], RTLD_LAZY);
-    }
-    // DDLogDebug(@"%@",idfa);
-    if (idfa == nil) {
-        return [self getIdfaRuntime];
-    }
-    return idfa;
+    return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
 }
 
 
@@ -164,23 +143,6 @@ static void *libAdSupport = NULL;
         NSLog(@"Passwordnot found");
     }
     return deviceInfo;
-}
-
-/**
- *  从appdelegate的mdic中取出相应加密字符串
- *
- *  @param funcNum 对应key的序号
- *
- *  @return 解密后的字符串
- */
-- (NSString*)getFunc:(int)funcNum
-{
-    AppDelegate *myapp =(AppDelegate*)[UIApplication sharedApplication].delegate
-    ;
-    NSString *str = [myapp.mdic objectForKey:[NSString stringWithFormat:@"func%d",funcNum]];
-    
-    return str;
-    
 }
 
 

@@ -8,8 +8,7 @@
 
 #import "AppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
-#import "AESCrypt.h"
-#import "codeConfuser.h"
+
 #import "KeyboardManager.h"
 
 @interface AppDelegate ()
@@ -47,13 +46,6 @@
     
     [[UINavigationBar appearance] setBarTintColor:kColor(kBackgroundColor)];
     
-    codeConfuser *cf = [[codeConfuser alloc] init];
-    cf.key = @"KYResearchCode_c1633";
-    NSString * sss = @"BIzLxEAeKtrz+kL8XLwY9FU3EMqno9FesrwmLtdtcgY=|||PAoZn3yLbt56BbfWqR7Uo/pS9cnHV44Fgr32SKA3OLU=|||SqV8HrO5XWxcGF/Ls8jY9KbhGkeJuP+yQwrlQ/19ckA=|||1SHcA4UYTcM6wr//5fjKkBkQyi++PNwo2SbQvNr+hGEJIYkBbI2QOXJVGvosnsdO9Ao2Iyd6mZxQ0v03JIPYYQ==";
-
-    self.mdic = [cf powerfulDecodeWithStr:sss];;
-    DDLogDebug(@"%@",self.mdic);
-    
     return YES;
 }
 
@@ -62,7 +54,7 @@
     
     NSError *setCategoryErr = nil;
     NSError *activationErr  = nil;
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:kAudioSessionProperty_OverrideCategoryMixWithOthers error: &setCategoryErr];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error: &setCategoryErr];
     [[AVAudioSession sharedInstance] setActive:YES error: &activationErr];
     
     //播放背景音乐

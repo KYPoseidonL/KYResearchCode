@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D05AF731D6AFFD9006D6DC7 /* NtFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF6D1D6AFFD9006D6DC7 /* NtFinder.m */; };
-		2D05AF741D6AFFD9006D6DC7 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF701D6AFFD9006D6DC7 /* SimplePing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2D05AF751D6AFFD9006D6DC7 /* SimplePingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF721D6AFFD9006D6DC7 /* SimplePingHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2D05AF781D6AFFF7006D6DC7 /* WIFIScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */; };
 		2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */; };
 		2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5B21D53101600EACBE3 /* KYTextView.m */; };
@@ -24,14 +21,16 @@
 		2D36C5191D5B0E0100E2FD87 /* Scan_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5161D5B0E0100E2FD87 /* Scan_VC.m */; };
 		2D36C51A1D5B0E0100E2FD87 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C5181D5B0E0100E2FD87 /* ViewController2.m */; };
 		2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */; };
-		2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */; };
-		2D68F7911CE5E0AF00E14BD2 /* libFMEncryption.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */; };
 		2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7941CE5E0DA00E14BD2 /* AESCrypt.m */; };
 		2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7961CE5E0DA00E14BD2 /* NSData+Base64.m */; };
 		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
 		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
 		2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D811CD91D065FEA0072FF80 /* CommonMethodController.m */; };
 		2DB5CDE51D5C46100025013E /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */; };
+		2DB8C22D1DAC7BA400FD1ECC /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8C22C1DAC7BA400FD1ECC /* AutoLayoutViewController.m */; };
+		2DB8C2301DAC7BB900FD1ECC /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8C22F1DAC7BB900FD1ECC /* ChatModel.m */; };
+		2DB8C2331DAC7BCB00FD1ECC /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8C2321DAC7BCB00FD1ECC /* ChatCell.m */; };
+		2DB8C2351DAC7BD900FD1ECC /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB8C2341DAC7BD900FD1ECC /* ChatCell.xib */; };
 		2DDA716F1D17DAF100C5BA65 /* KYAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71621D17DAF100C5BA65 /* KYAnimationView.m */; };
 		2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71651D17DAF100C5BA65 /* CircleLayer.m */; };
 		2DDA71711D17DAF100C5BA65 /* RectangleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDA71671D17DAF100C5BA65 /* RectangleLayer.m */; };
@@ -136,16 +135,6 @@
 
 /* Begin PBXFileReference section */
 		2006FF1BCD12F51098C602C0 /* Pods-KYResearchCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYResearchCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYResearchCode/Pods-KYResearchCode.release.xcconfig"; sourceTree = "<group>"; };
-		2D05AF691D6AFFD9006D6DC7 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
-		2D05AF6A1D6AFFD9006D6DC7 /* if_ether.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_ether.h; sourceTree = "<group>"; };
-		2D05AF6B1D6AFFD9006D6DC7 /* if_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_types.h; sourceTree = "<group>"; };
-		2D05AF6C1D6AFFD9006D6DC7 /* NtFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NtFinder.h; sourceTree = "<group>"; };
-		2D05AF6D1D6AFFD9006D6DC7 /* NtFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NtFinder.m; sourceTree = "<group>"; };
-		2D05AF6E1D6AFFD9006D6DC7 /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
-		2D05AF6F1D6AFFD9006D6DC7 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
-		2D05AF701D6AFFD9006D6DC7 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
-		2D05AF711D6AFFD9006D6DC7 /* SimplePingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePingHelper.h; sourceTree = "<group>"; };
-		2D05AF721D6AFFD9006D6DC7 /* SimplePingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePingHelper.m; sourceTree = "<group>"; };
 		2D05AF761D6AFFF7006D6DC7 /* WIFIScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIScanViewController.h; sourceTree = "<group>"; };
 		2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIScanViewController.m; sourceTree = "<group>"; };
 		2D30E5AE1D530F7A00EACBE3 /* KYInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYInputViewController.h; sourceTree = "<group>"; };
@@ -174,10 +163,6 @@
 		2D36C5181D5B0E0100E2FD87 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		2D3EAAF31D07B7E40026DF93 /* UIButton+KY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KY.h"; sourceTree = "<group>"; };
 		2D3EAAF41D07B7E40026DF93 /* UIButton+KY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KY.m"; sourceTree = "<group>"; };
-		2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codeConfuser.h; sourceTree = "<group>"; };
-		2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = codeConfuser.mm; sourceTree = "<group>"; };
-		2D68F78F1CE5E0AF00E14BD2 /* FMEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryption.h; sourceTree = "<group>"; };
-		2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFMEncryption.a; sourceTree = "<group>"; };
 		2D68F7931CE5E0DA00E14BD2 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
 		2D68F7941CE5E0DA00E14BD2 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
 		2D68F7951CE5E0DA00E14BD2 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -190,6 +175,13 @@
 		2D811CD91D065FEA0072FF80 /* CommonMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodController.m; sourceTree = "<group>"; };
 		2DB5CDE31D5C46100025013E /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
 		2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		2DB8C22B1DAC7BA400FD1ECC /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
+		2DB8C22C1DAC7BA400FD1ECC /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
+		2DB8C22E1DAC7BB900FD1ECC /* ChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		2DB8C22F1DAC7BB900FD1ECC /* ChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
+		2DB8C2311DAC7BCB00FD1ECC /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		2DB8C2321DAC7BCB00FD1ECC /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		2DB8C2341DAC7BD900FD1ECC /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
 		2DDA71611D17DAF100C5BA65 /* KYAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAnimationView.h; sourceTree = "<group>"; };
 		2DDA71621D17DAF100C5BA65 /* KYAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAnimationView.m; sourceTree = "<group>"; };
 		2DDA71641D17DAF100C5BA65 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
@@ -442,7 +434,6 @@
 				82D647B31CCB530100A24EE5 /* libUMSocial_Sdk_5.0.1.a in Frameworks */,
 				82D647BD1CCB530100A24EE5 /* libSocialWechat.a in Frameworks */,
 				82D647AD1CCB530100A24EE5 /* libWeiboSDK.a in Frameworks */,
-				2D68F7911CE5E0AF00E14BD2 /* libFMEncryption.a in Frameworks */,
 				F822D777218ADF651BC0BAA9 /* libPods-KYResearchCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,26 +468,8 @@
 			children = (
 				2D05AF761D6AFFF7006D6DC7 /* WIFIScanViewController.h */,
 				2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */,
-				2D05AF681D6AFFD9006D6DC7 /* WlanScan */,
 			);
 			path = "WIFI局域网IP扫描";
-			sourceTree = "<group>";
-		};
-		2D05AF681D6AFFD9006D6DC7 /* WlanScan */ = {
-			isa = PBXGroup;
-			children = (
-				2D05AF691D6AFFD9006D6DC7 /* if_arp.h */,
-				2D05AF6A1D6AFFD9006D6DC7 /* if_ether.h */,
-				2D05AF6B1D6AFFD9006D6DC7 /* if_types.h */,
-				2D05AF6C1D6AFFD9006D6DC7 /* NtFinder.h */,
-				2D05AF6D1D6AFFD9006D6DC7 /* NtFinder.m */,
-				2D05AF6E1D6AFFD9006D6DC7 /* route.h */,
-				2D05AF6F1D6AFFD9006D6DC7 /* SimplePing.h */,
-				2D05AF701D6AFFD9006D6DC7 /* SimplePing.m */,
-				2D05AF711D6AFFD9006D6DC7 /* SimplePingHelper.h */,
-				2D05AF721D6AFFD9006D6DC7 /* SimplePingHelper.m */,
-			);
-			path = WlanScan;
 			sourceTree = "<group>";
 		};
 		2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */ = {
@@ -556,15 +529,6 @@
 			path = "二维码";
 			sourceTree = "<group>";
 		};
-		2D68F78E1CE5E0AF00E14BD2 /* FMEncryption */ = {
-			isa = PBXGroup;
-			children = (
-				2D68F78F1CE5E0AF00E14BD2 /* FMEncryption.h */,
-				2D68F7901CE5E0AF00E14BD2 /* libFMEncryption.a */,
-			);
-			path = FMEncryption;
-			sourceTree = "<group>";
-		};
 		2D68F7921CE5E0DA00E14BD2 /* encode */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +551,44 @@
 				2D811CD91D065FEA0072FF80 /* CommonMethodController.m */,
 			);
 			path = "常用公共方法";
+			sourceTree = "<group>";
+		};
+		2DB8C2271DAC7B8700FD1ECC /* AutoLayoutCell高度自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8C2281DAC7B8800FD1ECC /* controller */,
+				2DB8C2291DAC7B8800FD1ECC /* model */,
+				2DB8C22A1DAC7B8800FD1ECC /* view */,
+			);
+			path = "AutoLayoutCell高度自适应";
+			sourceTree = "<group>";
+		};
+		2DB8C2281DAC7B8800FD1ECC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8C22B1DAC7BA400FD1ECC /* AutoLayoutViewController.h */,
+				2DB8C22C1DAC7BA400FD1ECC /* AutoLayoutViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2DB8C2291DAC7B8800FD1ECC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8C22E1DAC7BB900FD1ECC /* ChatModel.h */,
+				2DB8C22F1DAC7BB900FD1ECC /* ChatModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2DB8C22A1DAC7B8800FD1ECC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8C2311DAC7BCB00FD1ECC /* ChatCell.h */,
+				2DB8C2321DAC7BCB00FD1ECC /* ChatCell.m */,
+				2DB8C2341DAC7BD900FD1ECC /* ChatCell.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		2DDA71601D17DAF100C5BA65 /* KYAnimationView */ = {
@@ -731,6 +733,7 @@
 				2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */,
 				2D51B7E51D5B09DB004CE74F /* 二维码 */,
 				2D05AF671D6AFFCF006D6DC7 /* WIFI局域网IP扫描 */,
+				2DB8C2271DAC7B8700FD1ECC /* AutoLayoutCell高度自适应 */,
 			);
 			path = ChildrenVC;
 			sourceTree = "<group>";
@@ -753,9 +756,6 @@
 				82D646FA1CCB530100A24EE5 /* OpenUDID.m */,
 				82D646FB1CCB530100A24EE5 /* KYKeychain.h */,
 				82D646FC1CCB530100A24EE5 /* KYKeychain.m */,
-				2D68F78B1CE5E0A900E14BD2 /* codeConfuser.h */,
-				2D68F78C1CE5E0A900E14BD2 /* codeConfuser.mm */,
-				2D68F78E1CE5E0AF00E14BD2 /* FMEncryption */,
 				82D646FD1CCB530100A24EE5 /* UDIDViewController.h */,
 				82D646FE1CCB530100A24EE5 /* UDIDViewController.m */,
 			);
@@ -1353,6 +1353,7 @@
 				82D647B71CCB530100A24EE5 /* UMShareEditViewController.xib in Resources */,
 				820231AD1CCB500900B6F6F6 /* LaunchScreen.storyboard in Resources */,
 				82D647AB1CCB530100A24EE5 /* ShareUIView.xib in Resources */,
+				2DB8C2351DAC7BD900FD1ECC /* ChatCell.xib in Resources */,
 				82D647B21CCB530100A24EE5 /* UMSocialLocalizable.strings in Resources */,
 				82D647941CCB530100A24EE5 /* DataBaseViewController.xib in Resources */,
 				82D647B81CCB530100A24EE5 /* UMShareEditViewControlleriPad.xib in Resources */,
@@ -1462,9 +1463,9 @@
 				82D647911CCB530100A24EE5 /* AppModel.m in Sources */,
 				82D6479E1CCB530100A24EE5 /* HaloImg.m in Sources */,
 				2DDA71721D17DAF100C5BA65 /* TriangleLayer.m in Sources */,
+				2DB8C2331DAC7BCB00FD1ECC /* ChatCell.m in Sources */,
 				82B11C931CCB67E60041E597 /* ViewController.m in Sources */,
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
-				2D05AF741D6AFFD9006D6DC7 /* SimplePing.m in Sources */,
 				82A973DB1D55865500F9650A /* KYDataService.m in Sources */,
 				2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */,
 				2D36C5101D5B0DE500E2FD87 /* qrencode.c in Sources */,
@@ -1492,7 +1493,6 @@
 				2D36C5121D5B0DE500E2FD87 /* qrspec.c in Sources */,
 				2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */,
 				2DDA71741D17DAF100C5BA65 /* UIColor+Hex.m in Sources */,
-				2D68F78D1CE5E0A900E14BD2 /* codeConfuser.mm in Sources */,
 				82D647A61CCB530100A24EE5 /* UINavigationBar+Awesome.m in Sources */,
 				82D647A91CCB530100A24EE5 /* ShareTool.m in Sources */,
 				2D36C5141D5B0DE500E2FD87 /* split.c in Sources */,
@@ -1501,13 +1501,13 @@
 				82D647A41CCB530100A24EE5 /* UIImage+Color.m in Sources */,
 				2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */,
 				82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */,
-				2D05AF751D6AFFD9006D6DC7 /* SimplePingHelper.m in Sources */,
 				2D36C5111D5B0DE500E2FD87 /* qrinput.c in Sources */,
 				82D6478A1CCB530100A24EE5 /* KYKeychain.m in Sources */,
 				82D647A01CCB530100A24EE5 /* StarView.m in Sources */,
+				2DB8C2301DAC7BB900FD1ECC /* ChatModel.m in Sources */,
+				2DB8C22D1DAC7BA400FD1ECC /* AutoLayoutViewController.m in Sources */,
 				2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */,
 				82D6479D1CCB530100A24EE5 /* UIDevice+ProcessesAdditions.m in Sources */,
-				2D05AF731D6AFFD9006D6DC7 /* NtFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1657,7 +1657,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KYResearchCode/PrefixHeader.pch";
 				INFOPLIST_FILE = KYResearchCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1686,7 +1686,7 @@
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KYResearchCode/PrefixHeader.pch";
 				INFOPLIST_FILE = KYResearchCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
