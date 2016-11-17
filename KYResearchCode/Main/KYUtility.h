@@ -92,5 +92,13 @@
                         lastTimeFormat:(NSString *)format1
                          ToCurrentTime:(NSString *)currentTime
                      currentTimeFormat:(NSString *)format2;
+/**
+ *  是否为昨天
+ *
+ *  @param popUpTime 当前时间
+ *
+ *  @return YES或NO
+ */
++ (BOOL)judgeDateIsYesterday:(NSDate *)popUpTime;
 
 @end

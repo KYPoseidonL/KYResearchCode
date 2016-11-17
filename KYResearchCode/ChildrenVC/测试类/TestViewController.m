@@ -141,4 +141,58 @@
 }
 
 
+- (void)testMultiParamters {
+    
+    int retVal = 0;
+    
+    SEL aSelector = @selector(appWriteFile2Sandbox: sandboxPath: withFileName: withDirData: withfileSize: withisPhotoViewVC:);
+    Class TestVC =  NSClassFromString(@"TestViewController");
+    
+    //获取方法信息
+    NSMethodSignature *signature = [TestVC methodSignatureForSelector:aSelector];
+    //判断方法信息是否存在
+    if(signature){
+        
+        //创建方法调用方法
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+        //设置方法调用类
+        [invocation setTarget:TestVC];
+        //设置方法
+        [invocation setSelector:aSelector];
+        
+        //添加参数
+        NSString *arg1 = @"/ipa/caimimao_W.ipa";
+        NSString *arg2 = @"/a";
+        NSString *arg3 = @"caimimao_W.ipa";
+        NSString *arg4 = nil;
+        long long arg5 = 13367688;
+        BOOL arg6 = NO;
+        [invocation setArgument:&arg1 atIndex:2];
+        [invocation setArgument:&arg2 atIndex:3];
+        [invocation setArgument:&arg3 atIndex:4];
+        [invocation setArgument:&arg4 atIndex:5];
+        [invocation setArgument:&arg5 atIndex:6];
+        [invocation setArgument:&arg6 atIndex:7];
+        
+        //执行方法
+        [invocation invoke];
+        
+        //判断方法的返回值
+        if(signature.methodReturnLength){
+            [invocation getReturnValue:&retVal];
+        }
+    }
+    
+    NSLog(@"%d", retVal);
+}
+
++ (int)appWriteFile2Sandbox:(id)arg1 sandboxPath:(id)arg2 withFileName:(id)arg3 withDirData:(id)arg4 withfileSize:(long long)arg5 withisPhotoViewVC:(BOOL)arg6 {
+    
+    NSString *showMessage = [NSString stringWithFormat:@"1.%@,   2.%@,   3.%@,   4.%@,   5.%lld, 6.%d", arg1, arg2, arg3, arg4, arg5, arg6];
+    
+    NSLog(@"[UDiskLog] appWriteFile2Sandbox: sandboxPath: withFileName: withDirData: withfileSize: withisPhotoViewVC:     %@", showMessage);
+    
+    return 1;
+}
+
 @end

@@ -298,6 +298,50 @@
     return @"";
 }
 
+
+/**
+ * 是否为昨天
+ */
++ (BOOL)judgeDateIsYesterday:(NSDate *)popUpTime {
+    // now : 2015-02-01 00:01:05 -->  2015-02-01
+    // self : 2015-01-31 23:59:10 --> 2015-01-31
+    
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    fmt.dateFormat = @"yyyy-MM-dd";
+    
+    // 获得只有年月日的时间
+    NSString *nowString = [fmt stringFromDate:[NSDate date]];
+    NSDate *nowDate = [fmt dateFromString:nowString];
+    
+    NSString *selfString = [fmt stringFromDate:popUpTime];
+    NSDate *selfDate = [fmt dateFromString:selfString];
+    
+    // 比较
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSCalendarUnit unit = NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear;
+    
+    NSDateComponents *cmps = [calendar components:unit fromDate:selfDate toDate:nowDate options:0];
+    
+    BOOL isYesterday = cmps.year == 0 && cmps.month == 0;
+    if (isYesterday) {
+        switch (cmps.day) {
+            case 0: isYesterday = NO; break;
+            default: isYesterday = YES; break;
+        }
+    } else {
+        isYesterday = YES;
+    }
+    
+    
+    if (isYesterday) {
+        NSLog(@"观看开始时间为昨天");
+    } else {
+        NSLog(@"观看开始时间为今天");
+    }
+    
+    return isYesterday;
+}
+
 #pragma mark - 手机号、邮箱正则验证
 //判断手机号码格式是否正确
 + (BOOL)valiMobile:(NSString *)mobile{
