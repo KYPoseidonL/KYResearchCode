@@ -26,6 +26,7 @@
 #import "QRCodeViewController.h"
 #import "WIFIScanViewController.h"
 #import "AutoLayoutViewController.h"
+#import "WKWebViewUserController.h"
 
 @interface ViewController ()<UMSocialUIDelegate, UITableViewDataSource, UITableViewDelegate>
 {
@@ -118,7 +119,7 @@
 - (NSArray *)dataList {
     
     if (!_dataList) {
-        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"常用公共方法", @"微信输入框", @"二维码相关", @"WIFI局域网IP扫描", @"AutoLayoutCell高度自适应", @"测试", @"测试", @"测试", @"测试"];
+        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"常用公共方法", @"微信输入框", @"二维码相关", @"WIFI局域网IP扫描", @"AutoLayoutCell高度自适应", @"WKWebView使用", @"测试", @"测试", @"测试"];
     }
     return _dataList;
 }
@@ -240,6 +241,12 @@
         case 14: {
             UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             AutoLayoutViewController  *vc = [storyBoard instantiateViewControllerWithIdentifier:@"AutoLayoutCellID"];
+            vc.title = self.dataList[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
+        case 15: {
+            UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            WKWebViewUserController  *vc = [storyBoard instantiateViewControllerWithIdentifier:@"WKWebViewUserID"];
             vc.title = self.dataList[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         } break;

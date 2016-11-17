@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D05AF781D6AFFF7006D6DC7 /* WIFIScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */; };
+		2D2AD30C1DDD466F00BF1E2A /* WKWebViewUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD30B1DDD466F00BF1E2A /* WKWebViewUserController.m */; };
 		2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */; };
 		2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5B21D53101600EACBE3 /* KYTextView.m */; };
 		2D36C4FB1D5B0D4500E2FD87 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D36C4FA1D5B0D4500E2FD87 /* QRCodeViewController.m */; };
@@ -137,6 +138,8 @@
 		2006FF1BCD12F51098C602C0 /* Pods-KYResearchCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYResearchCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYResearchCode/Pods-KYResearchCode.release.xcconfig"; sourceTree = "<group>"; };
 		2D05AF761D6AFFF7006D6DC7 /* WIFIScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIScanViewController.h; sourceTree = "<group>"; };
 		2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIScanViewController.m; sourceTree = "<group>"; };
+		2D2AD30A1DDD466F00BF1E2A /* WKWebViewUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewUserController.h; sourceTree = "<group>"; };
+		2D2AD30B1DDD466F00BF1E2A /* WKWebViewUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewUserController.m; sourceTree = "<group>"; };
 		2D30E5AE1D530F7A00EACBE3 /* KYInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYInputViewController.h; sourceTree = "<group>"; };
 		2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYInputViewController.m; sourceTree = "<group>"; };
 		2D30E5B11D53101600EACBE3 /* KYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTextView.h; sourceTree = "<group>"; };
@@ -472,6 +475,15 @@
 			path = "WIFI局域网IP扫描";
 			sourceTree = "<group>";
 		};
+		2D2AD3091DDD464800BF1E2A /* WKWebView使用 */ = {
+			isa = PBXGroup;
+			children = (
+				2D2AD30A1DDD466F00BF1E2A /* WKWebViewUserController.h */,
+				2D2AD30B1DDD466F00BF1E2A /* WKWebViewUserController.m */,
+			);
+			path = "WKWebView使用";
+			sourceTree = "<group>";
+		};
 		2D30E5AD1D530F6200EACBE3 /* 微信输入框效果 */ = {
 			isa = PBXGroup;
 			children = (
@@ -734,6 +746,7 @@
 				2D51B7E51D5B09DB004CE74F /* 二维码 */,
 				2D05AF671D6AFFCF006D6DC7 /* WIFI局域网IP扫描 */,
 				2DB8C2271DAC7B8700FD1ECC /* AutoLayoutCell高度自适应 */,
+				2D2AD3091DDD464800BF1E2A /* WKWebView使用 */,
 			);
 			path = ChildrenVC;
 			sourceTree = "<group>";
@@ -1465,6 +1478,7 @@
 				2DDA71721D17DAF100C5BA65 /* TriangleLayer.m in Sources */,
 				2DB8C2331DAC7BCB00FD1ECC /* ChatCell.m in Sources */,
 				82B11C931CCB67E60041E597 /* ViewController.m in Sources */,
+				2D2AD30C1DDD466F00BF1E2A /* WKWebViewUserController.m in Sources */,
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
 				82A973DB1D55865500F9650A /* KYDataService.m in Sources */,
 				2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */,
