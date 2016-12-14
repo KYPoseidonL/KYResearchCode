@@ -27,6 +27,8 @@
 		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
 		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
 		2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D811CD91D065FEA0072FF80 /* CommonMethodController.m */; };
+		2D90B5001E0118B100D6C48F /* KYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4FF1E0118B100D6C48F /* KYAlertView.m */; };
+		2D90B5051E011C0100D6C48F /* KYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B5041E011C0100D6C48F /* KYAlertViewController.m */; };
 		2DB5CDE51D5C46100025013E /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */; };
 		2DB8C22D1DAC7BA400FD1ECC /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8C22C1DAC7BA400FD1ECC /* AutoLayoutViewController.m */; };
 		2DB8C2301DAC7BB900FD1ECC /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8C22F1DAC7BB900FD1ECC /* ChatModel.m */; };
@@ -178,6 +180,11 @@
 		2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		2D811CD81D065FEA0072FF80 /* CommonMethodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethodController.h; sourceTree = "<group>"; };
 		2D811CD91D065FEA0072FF80 /* CommonMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodController.m; sourceTree = "<group>"; };
+		2D90B4FE1E0118B100D6C48F /* KYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAlertView.h; sourceTree = "<group>"; };
+		2D90B4FF1E0118B100D6C48F /* KYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAlertView.m; sourceTree = "<group>"; };
+		2D90B5011E0118D700D6C48F /* KYEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYEnum.h; sourceTree = "<group>"; };
+		2D90B5031E011C0100D6C48F /* KYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAlertViewController.h; sourceTree = "<group>"; };
+		2D90B5041E011C0100D6C48F /* KYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAlertViewController.m; sourceTree = "<group>"; };
 		2DB5CDE31D5C46100025013E /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
 		2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
 		2DB8C22B1DAC7BA400FD1ECC /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
@@ -571,6 +578,25 @@
 			path = "常用公共方法";
 			sourceTree = "<group>";
 		};
+		2D90B4FD1E01189B00D6C48F /* KYAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				2D90B4FE1E0118B100D6C48F /* KYAlertView.h */,
+				2D90B4FF1E0118B100D6C48F /* KYAlertView.m */,
+				2D90B5011E0118D700D6C48F /* KYEnum.h */,
+			);
+			path = KYAlertView;
+			sourceTree = "<group>";
+		};
+		2D90B5021E011BEE00D6C48F /* 自定义警告提示框 */ = {
+			isa = PBXGroup;
+			children = (
+				2D90B5031E011C0100D6C48F /* KYAlertViewController.h */,
+				2D90B5041E011C0100D6C48F /* KYAlertViewController.m */,
+			);
+			path = "自定义警告提示框";
+			sourceTree = "<group>";
+		};
 		2DB8C2271DAC7B8700FD1ECC /* AutoLayoutCell高度自适应 */ = {
 			isa = PBXGroup;
 			children = (
@@ -655,6 +681,7 @@
 				2DF019991DF1195100BF1F98 /* KYWebView.m */,
 				2DF0199D1DF1196300BF1F98 /* KYButton.h */,
 				2DF0199E1DF1196300BF1F98 /* KYButton.m */,
+				2D90B4FD1E01189B00D6C48F /* KYAlertView */,
 			);
 			path = KYTools;
 			sourceTree = "<group>";
@@ -778,6 +805,7 @@
 				2DB8C2271DAC7B8700FD1ECC /* AutoLayoutCell高度自适应 */,
 				2D2AD3091DDD464800BF1E2A /* WKWebView使用 */,
 				2DF019A01DF119B000BF1F98 /* 自定义按钮 */,
+				2D90B5021E011BEE00D6C48F /* 自定义警告提示框 */,
 			);
 			path = ChildrenVC;
 			sourceTree = "<group>";
@@ -1350,7 +1378,6 @@
 				TargetAttributes = {
 					820231991CCB500900B6F6F6 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = DPE6JLPKW6;
 					};
 					820231B21CCB500900B6F6F6 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1482,6 +1509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D90B5051E011C0100D6C48F /* KYAlertViewController.m in Sources */,
 				82D6479F1CCB530100A24EE5 /* PulsingHaloLayer.m in Sources */,
 				2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */,
 				82D6479A1CCB530100A24EE5 /* HTTPRequestManager.m in Sources */,
@@ -1541,6 +1569,7 @@
 				2D36C5141D5B0DE500E2FD87 /* split.c in Sources */,
 				2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */,
 				82D647A81CCB530100A24EE5 /* UIView+ViewController.m in Sources */,
+				2D90B5001E0118B100D6C48F /* KYAlertView.m in Sources */,
 				82D647A41CCB530100A24EE5 /* UIImage+Color.m in Sources */,
 				2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */,
 				82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */,

@@ -37,12 +37,19 @@
 }
 
 - (void)setup {
-
-    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"] placeholderImage:nil];
     
-//    self.testWebView.scalesPageToFit = YES;
-//    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"]];
-//    [self.testWebView loadRequest:urlRequest];
+//    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"https://i.alipayobjects.com/i/ecmng/jpg/201501/4JdkvtFg7B.jpg"] placeholderImage:nil];
+    
+    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://img.feimaor.com//icon/forumpost_8_20150728.png"] placeholderImage:nil];
+    
+//    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"] placeholderImage:nil];
+    
+    NSString *url1 = @"http://mob40.feimaor.com/event.action?type=27&jiaid=313716819&fmuid=311558&cityid=35&hotid=35&url=http://www.caimimao.cn/cmmhtm/ad_prize.html";
+    NSString *url2 = @"http://www.caimimao.cn/cmmhtm/ad_prize.html";
+    NSString *url3 = @"http://www.baidu.com";
+    self.testWebView.scalesPageToFit = YES;
+    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url1]];
+    [self.testWebView loadRequest:urlRequest];
     
     
     BOOL isFlag = [KYUtility validateUserName:@"fdas23"];

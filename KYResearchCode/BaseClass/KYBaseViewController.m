@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = kColor(@"f0efed");
-    
+    self.navigationController.navigationBar.translucent = NO;
     
     if (self.navigationController.viewControllers.count > 1) {
         [self createBackButton];
