@@ -51,6 +51,7 @@
     [self createTabelView];
     
     [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     NSInteger postion = 2;
     
@@ -136,7 +137,7 @@
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
     
-    _tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+//    _tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 #pragma mark - UITableView DataSource
