@@ -26,6 +26,7 @@
 		2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7961CE5E0DA00E14BD2 /* NSData+Base64.m */; };
 		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
 		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
+		2D7B3C571E0910B0000D6656 /* HomeUpsideFistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B3C561E0910B0000D6656 /* HomeUpsideFistView.m */; };
 		2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D811CD91D065FEA0072FF80 /* CommonMethodController.m */; };
 		2D90B5001E0118B100D6C48F /* KYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4FF1E0118B100D6C48F /* KYAlertView.m */; };
 		2D90B5051E011C0100D6C48F /* KYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B5041E011C0100D6C48F /* KYAlertViewController.m */; };
@@ -178,6 +179,8 @@
 		2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		2D68F7991CE5E0DA00E14BD2 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		2D7B3C551E0910B0000D6656 /* HomeUpsideFistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeUpsideFistView.h; sourceTree = "<group>"; };
+		2D7B3C561E0910B0000D6656 /* HomeUpsideFistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeUpsideFistView.m; sourceTree = "<group>"; };
 		2D811CD81D065FEA0072FF80 /* CommonMethodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethodController.h; sourceTree = "<group>"; };
 		2D811CD91D065FEA0072FF80 /* CommonMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodController.m; sourceTree = "<group>"; };
 		2D90B4FE1E0118B100D6C48F /* KYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAlertView.h; sourceTree = "<group>"; };
@@ -1042,6 +1045,8 @@
 			children = (
 				82D647141CCB530100A24EE5 /* TestViewController.h */,
 				82D647151CCB530100A24EE5 /* TestViewController.m */,
+				2D7B3C551E0910B0000D6656 /* HomeUpsideFistView.h */,
+				2D7B3C561E0910B0000D6656 /* HomeUpsideFistView.m */,
 				82A973D31D5583F200F9650A /* Model */,
 			);
 			path = "测试类";
@@ -1520,6 +1525,7 @@
 				2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */,
 				2DDA716F1D17DAF100C5BA65 /* KYAnimationView.m in Sources */,
 				82D647951CCB530100A24EE5 /* TestViewController.m in Sources */,
+				2D7B3C571E0910B0000D6656 /* HomeUpsideFistView.m in Sources */,
 				82D6479C1CCB530100A24EE5 /* AppManager.m in Sources */,
 				82D6478B1CCB530100A24EE5 /* UDIDViewController.m in Sources */,
 				2D36C50E1D5B0DE500E2FD87 /* mask.c in Sources */,

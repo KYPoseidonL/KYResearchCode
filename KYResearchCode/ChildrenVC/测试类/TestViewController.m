@@ -8,6 +8,7 @@
 
 #import "TestViewController.h"
 #import "TaskModel.h"
+#import "HomeUpsideFistView.h"
 
 @interface TestViewController ()
 
@@ -37,6 +38,11 @@
 }
 
 - (void)setup {
+    
+    
+    HomeUpsideFistView *fistView = [[HomeUpsideFistView alloc] initWithFrame:CGRectMake(0, 50, 350*AUTOSIZE_SCALE_X, 413.5f*AUTOSIZE_SCALE_Y)];
+    fistView.centerX = kScreen_Width/2;
+    [self.view addSubview:fistView];
     
 //    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"https://i.alipayobjects.com/i/ecmng/jpg/201501/4JdkvtFg7B.jpg"] placeholderImage:nil];
     
