@@ -29,6 +29,7 @@
 #import "WKWebViewUserController.h"
 #import "CustomButtonViewController.h"
 #import "KYAlertViewController.h"
+#import "SideslipViewController.h"
 
 @interface ViewController ()<UMSocialUIDelegate, UITableViewDataSource, UITableViewDelegate>
 {
@@ -125,7 +126,7 @@
 - (NSArray *)dataList {
     
     if (!_dataList) {
-        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"常用公共方法", @"微信输入框", @"二维码相关", @"WIFI局域网IP扫描", @"AutoLayoutCell高度自适应", @"WKWebView使用", @"自定义按钮，文字图片位置随意定制", @"自定义警告提示框"];
+        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"常用公共方法", @"微信输入框", @"二维码相关", @"WIFI局域网IP扫描", @"AutoLayoutCell高度自适应", @"WKWebView使用", @"自定义按钮，文字图片位置随意定制", @"自定义警告提示框", @"TabelView自定义侧滑"];
     }
     return _dataList;
 }
@@ -264,6 +265,12 @@
         } break;
         case 17: {
             KYAlertViewController *vc =[[KYAlertViewController alloc] init];
+            vc.title = self.dataList[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
+        case 18: {
+            UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            SideslipViewController  *vc = [storyBoard instantiateViewControllerWithIdentifier:@"SideslipVCID"];
             vc.title = self.dataList[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         } break;

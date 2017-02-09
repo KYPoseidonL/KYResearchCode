@@ -40,9 +40,9 @@
 - (void)setup {
     
     
-    HomeUpsideFistView *fistView = [[HomeUpsideFistView alloc] initWithFrame:CGRectMake(0, 50, 350*AUTOSIZE_SCALE_X, 413.5f*AUTOSIZE_SCALE_Y)];
-    fistView.centerX = kScreen_Width/2;
-    [self.view addSubview:fistView];
+//    HomeUpsideFistView *fistView = [[HomeUpsideFistView alloc] initWithFrame:CGRectMake(0, 50, 350*AUTOSIZE_SCALE_X, 413.5f*AUTOSIZE_SCALE_Y)];
+//    fistView.centerX = kScreen_Width/2;
+//    [self.view addSubview:fistView];
     
 //    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"https://i.alipayobjects.com/i/ecmng/jpg/201501/4JdkvtFg7B.jpg"] placeholderImage:nil];
     
@@ -52,9 +52,9 @@
     
     NSString *url1 = @"http://mob40.feimaor.com/event.action?type=27&jiaid=313716819&fmuid=311558&cityid=35&hotid=35&url=http://www.caimimao.cn/cmmhtm/ad_prize.html";
     NSString *url2 = @"http://www.caimimao.cn/cmmhtm/ad_prize.html";
-    NSString *url3 = @"http://www.baidu.com";
+    NSString *url3 = @"http://mob40.feimaor.com/event.action?type=22&jiaid=313794851&cityid=35&hotid=1893&url=http://item.jd.com/183559.html";
     self.testWebView.scalesPageToFit = YES;
-    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url1]];
+    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url3]];
     [self.testWebView loadRequest:urlRequest];
     
     
