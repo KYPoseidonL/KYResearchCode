@@ -6,7 +6,12 @@
 
 @implementation UIColor (HexString)
 
-+ (UIColor *)colorWithHexString:(NSString *)hexString {
++ (UIColor *)colorWithHexString:(NSString *)hexString  {
+    
+    return [self colorWithHexString:hexString alpha:1.f];
+}
+
++ (UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha {
 
     unsigned int red,green,blue;
     NSRange range;

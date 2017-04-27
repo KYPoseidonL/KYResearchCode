@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2D05AF781D6AFFF7006D6DC7 /* WIFIScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */; };
+		2D078DEB1E4C71990084CB9A /* SideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D078DEA1E4C71990084CB9A /* SideslipViewController.m */; };
+		2D078DF11E4C71A30084CB9A /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D078DED1E4C71A30084CB9A /* UITableViewCell+Extension.m */; };
+		2D078DF21E4C71A30084CB9A /* UITableViewRowAction+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D078DEF1E4C71A30084CB9A /* UITableViewRowAction+Extension.m */; };
+		2D078DF31E4C71A30084CB9A /* UITableViewRowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D078DF01E4C71A30084CB9A /* UITableViewRowAction.m */; };
 		2D2AD30C1DDD466F00BF1E2A /* WKWebViewUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AD30B1DDD466F00BF1E2A /* WKWebViewUserController.m */; };
 		2D30E5B01D530F7A00EACBE3 /* KYInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5AF1D530F7A00EACBE3 /* KYInputViewController.m */; };
 		2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E5B21D53101600EACBE3 /* KYTextView.m */; };
@@ -26,7 +30,10 @@
 		2D68F79C1CE5E0DA00E14BD2 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7961CE5E0DA00E14BD2 /* NSData+Base64.m */; };
 		2D68F79D1CE5E0DA00E14BD2 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */; };
 		2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */; };
+		2D7B3C571E0910B0000D6656 /* HomeUpsideFistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B3C561E0910B0000D6656 /* HomeUpsideFistView.m */; };
 		2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D811CD91D065FEA0072FF80 /* CommonMethodController.m */; };
+		2D90B5001E0118B100D6C48F /* KYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B4FF1E0118B100D6C48F /* KYAlertView.m */; };
+		2D90B5051E011C0100D6C48F /* KYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D90B5041E011C0100D6C48F /* KYAlertViewController.m */; };
 		2DB5CDE51D5C46100025013E /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */; };
 		2DB8C22D1DAC7BA400FD1ECC /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8C22C1DAC7BA400FD1ECC /* AutoLayoutViewController.m */; };
 		2DB8C2301DAC7BB900FD1ECC /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8C22F1DAC7BB900FD1ECC /* ChatModel.m */; };
@@ -140,6 +147,12 @@
 		2006FF1BCD12F51098C602C0 /* Pods-KYResearchCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYResearchCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYResearchCode/Pods-KYResearchCode.release.xcconfig"; sourceTree = "<group>"; };
 		2D05AF761D6AFFF7006D6DC7 /* WIFIScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIScanViewController.h; sourceTree = "<group>"; };
 		2D05AF771D6AFFF7006D6DC7 /* WIFIScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIScanViewController.m; sourceTree = "<group>"; };
+		2D078DE91E4C71990084CB9A /* SideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideslipViewController.h; sourceTree = "<group>"; };
+		2D078DEA1E4C71990084CB9A /* SideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideslipViewController.m; sourceTree = "<group>"; };
+		2D078DED1E4C71A30084CB9A /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
+		2D078DEE1E4C71A30084CB9A /* UITableViewRowAction+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewRowAction+Extension.h"; sourceTree = "<group>"; };
+		2D078DEF1E4C71A30084CB9A /* UITableViewRowAction+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewRowAction+Extension.m"; sourceTree = "<group>"; };
+		2D078DF01E4C71A30084CB9A /* UITableViewRowAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewRowAction.m; sourceTree = "<group>"; };
 		2D2AD30A1DDD466F00BF1E2A /* WKWebViewUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewUserController.h; sourceTree = "<group>"; };
 		2D2AD30B1DDD466F00BF1E2A /* WKWebViewUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewUserController.m; sourceTree = "<group>"; };
 		2D30E5AE1D530F7A00EACBE3 /* KYInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYInputViewController.h; sourceTree = "<group>"; };
@@ -176,8 +189,15 @@
 		2D68F7981CE5E0DA00E14BD2 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		2D68F7991CE5E0DA00E14BD2 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		2D68F79A1CE5E0DA00E14BD2 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		2D7B3C551E0910B0000D6656 /* HomeUpsideFistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeUpsideFistView.h; sourceTree = "<group>"; };
+		2D7B3C561E0910B0000D6656 /* HomeUpsideFistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeUpsideFistView.m; sourceTree = "<group>"; };
 		2D811CD81D065FEA0072FF80 /* CommonMethodController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethodController.h; sourceTree = "<group>"; };
 		2D811CD91D065FEA0072FF80 /* CommonMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodController.m; sourceTree = "<group>"; };
+		2D90B4FE1E0118B100D6C48F /* KYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAlertView.h; sourceTree = "<group>"; };
+		2D90B4FF1E0118B100D6C48F /* KYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAlertView.m; sourceTree = "<group>"; };
+		2D90B5011E0118D700D6C48F /* KYEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYEnum.h; sourceTree = "<group>"; };
+		2D90B5031E011C0100D6C48F /* KYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYAlertViewController.h; sourceTree = "<group>"; };
+		2D90B5041E011C0100D6C48F /* KYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYAlertViewController.m; sourceTree = "<group>"; };
 		2DB5CDE31D5C46100025013E /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
 		2DB5CDE41D5C46100025013E /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
 		2DB8C22B1DAC7BA400FD1ECC /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
@@ -481,6 +501,27 @@
 			path = "WIFI局域网IP扫描";
 			sourceTree = "<group>";
 		};
+		2D078DE81E4C716C0084CB9A /* 自定义TabelView侧滑删除 */ = {
+			isa = PBXGroup;
+			children = (
+				2D078DE91E4C71990084CB9A /* SideslipViewController.h */,
+				2D078DEA1E4C71990084CB9A /* SideslipViewController.m */,
+				2D078DEC1E4C71A30084CB9A /* TableViewRowAction */,
+			);
+			path = "自定义TabelView侧滑删除";
+			sourceTree = "<group>";
+		};
+		2D078DEC1E4C71A30084CB9A /* TableViewRowAction */ = {
+			isa = PBXGroup;
+			children = (
+				2D078DED1E4C71A30084CB9A /* UITableViewCell+Extension.m */,
+				2D078DEE1E4C71A30084CB9A /* UITableViewRowAction+Extension.h */,
+				2D078DEF1E4C71A30084CB9A /* UITableViewRowAction+Extension.m */,
+				2D078DF01E4C71A30084CB9A /* UITableViewRowAction.m */,
+			);
+			path = TableViewRowAction;
+			sourceTree = "<group>";
+		};
 		2D2AD3091DDD464800BF1E2A /* WKWebView使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -571,6 +612,25 @@
 			path = "常用公共方法";
 			sourceTree = "<group>";
 		};
+		2D90B4FD1E01189B00D6C48F /* KYAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				2D90B4FE1E0118B100D6C48F /* KYAlertView.h */,
+				2D90B4FF1E0118B100D6C48F /* KYAlertView.m */,
+				2D90B5011E0118D700D6C48F /* KYEnum.h */,
+			);
+			path = KYAlertView;
+			sourceTree = "<group>";
+		};
+		2D90B5021E011BEE00D6C48F /* 自定义警告提示框 */ = {
+			isa = PBXGroup;
+			children = (
+				2D90B5031E011C0100D6C48F /* KYAlertViewController.h */,
+				2D90B5041E011C0100D6C48F /* KYAlertViewController.m */,
+			);
+			path = "自定义警告提示框";
+			sourceTree = "<group>";
+		};
 		2DB8C2271DAC7B8700FD1ECC /* AutoLayoutCell高度自适应 */ = {
 			isa = PBXGroup;
 			children = (
@@ -655,6 +715,7 @@
 				2DF019991DF1195100BF1F98 /* KYWebView.m */,
 				2DF0199D1DF1196300BF1F98 /* KYButton.h */,
 				2DF0199E1DF1196300BF1F98 /* KYButton.m */,
+				2D90B4FD1E01189B00D6C48F /* KYAlertView */,
 			);
 			path = KYTools;
 			sourceTree = "<group>";
@@ -778,6 +839,8 @@
 				2DB8C2271DAC7B8700FD1ECC /* AutoLayoutCell高度自适应 */,
 				2D2AD3091DDD464800BF1E2A /* WKWebView使用 */,
 				2DF019A01DF119B000BF1F98 /* 自定义按钮 */,
+				2D90B5021E011BEE00D6C48F /* 自定义警告提示框 */,
+				2D078DE81E4C716C0084CB9A /* 自定义TabelView侧滑删除 */,
 			);
 			path = ChildrenVC;
 			sourceTree = "<group>";
@@ -1014,6 +1077,8 @@
 			children = (
 				82D647141CCB530100A24EE5 /* TestViewController.h */,
 				82D647151CCB530100A24EE5 /* TestViewController.m */,
+				2D7B3C551E0910B0000D6656 /* HomeUpsideFistView.h */,
+				2D7B3C561E0910B0000D6656 /* HomeUpsideFistView.m */,
 				82A973D31D5583F200F9650A /* Model */,
 			);
 			path = "测试类";
@@ -1350,7 +1415,6 @@
 				TargetAttributes = {
 					820231991CCB500900B6F6F6 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = DPE6JLPKW6;
 					};
 					820231B21CCB500900B6F6F6 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1482,22 +1546,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D90B5051E011C0100D6C48F /* KYAlertViewController.m in Sources */,
 				82D6479F1CCB530100A24EE5 /* PulsingHaloLayer.m in Sources */,
 				2D811CDA1D065FEA0072FF80 /* CommonMethodController.m in Sources */,
 				82D6479A1CCB530100A24EE5 /* HTTPRequestManager.m in Sources */,
 				2DF0199A1DF1195100BF1F98 /* KYDataBase.m in Sources */,
+				2D078DF11E4C71A30084CB9A /* UITableViewCell+Extension.m in Sources */,
+				2D078DF21E4C71A30084CB9A /* UITableViewRowAction+Extension.m in Sources */,
 				82D6478D1CCB530100A24EE5 /* KYWebViewViewController.m in Sources */,
 				82D6478E1CCB530100A24EE5 /* AppListCell.m in Sources */,
 				2DDA71731D17DAF100C5BA65 /* WaveLayer.m in Sources */,
 				2D68F79E1CE5E0DA00E14BD2 /* NSString+Base64.m in Sources */,
 				2DDA716F1D17DAF100C5BA65 /* KYAnimationView.m in Sources */,
 				82D647951CCB530100A24EE5 /* TestViewController.m in Sources */,
+				2D7B3C571E0910B0000D6656 /* HomeUpsideFistView.m in Sources */,
 				82D6479C1CCB530100A24EE5 /* AppManager.m in Sources */,
 				82D6478B1CCB530100A24EE5 /* UDIDViewController.m in Sources */,
 				2D36C50E1D5B0DE500E2FD87 /* mask.c in Sources */,
 				82D647901CCB530100A24EE5 /* AppListViewController.m in Sources */,
 				82D647961CCB530100A24EE5 /* UserLoginViewController.m in Sources */,
 				2DB5CDE51D5C46100025013E /* QRCodeGenerator.m in Sources */,
+				2D078DF31E4C71A30084CB9A /* UITableViewRowAction.m in Sources */,
 				2DF019A31DF119CA00BF1F98 /* CustomButtonViewController.m in Sources */,
 				8202319F1CCB500900B6F6F6 /* main.m in Sources */,
 				82D647931CCB530100A24EE5 /* DataBaseViewController.m in Sources */,
@@ -1511,6 +1580,7 @@
 				2DF0199F1DF1196300BF1F98 /* KYButton.m in Sources */,
 				82D647971CCB530100A24EE5 /* ShowCustomAnimationController.m in Sources */,
 				2DDA71701D17DAF100C5BA65 /* CircleLayer.m in Sources */,
+				2D078DEB1E4C71990084CB9A /* SideslipViewController.m in Sources */,
 				2D36C5101D5B0DE500E2FD87 /* qrencode.c in Sources */,
 				82D647A51CCB530100A24EE5 /* UIImage+Scale.m in Sources */,
 				2D68F79B1CE5E0DA00E14BD2 /* AESCrypt.m in Sources */,
@@ -1541,6 +1611,7 @@
 				2D36C5141D5B0DE500E2FD87 /* split.c in Sources */,
 				2D30E5B31D53101600EACBE3 /* KYTextView.m in Sources */,
 				82D647A81CCB530100A24EE5 /* UIView+ViewController.m in Sources */,
+				2D90B5001E0118B100D6C48F /* KYAlertView.m in Sources */,
 				82D647A41CCB530100A24EE5 /* UIImage+Color.m in Sources */,
 				2D3EAAF51D07B7E40026DF93 /* UIButton+KY.m in Sources */,
 				82D647861CCB530100A24EE5 /* KYBaseViewController.m in Sources */,

@@ -453,6 +453,43 @@
             </objects>
             <point key="canvasLocation" x="1" y="1510"/>
         </scene>
+        <!--Sideslip View Controller-->
+        <scene sceneID="9a7-31-Aa7">
+            <objects>
+                <viewController storyboardIdentifier="SideslipVCID" id="ux0-SG-HyZ" customClass="SideslipViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qIG-1n-J2Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="7fq-ZD-56N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vSB-Mh-O8v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-hz-hrZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ux0-SG-HyZ" id="dta-ia-5YS"/>
+                                    <outlet property="delegate" destination="ux0-SG-HyZ" id="j8a-Ix-DsM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X6L-hz-hrZ" firstAttribute="top" secondItem="vSB-Mh-O8v" secondAttribute="top" id="Beb-go-eGH"/>
+                            <constraint firstAttribute="trailing" secondItem="X6L-hz-hrZ" secondAttribute="trailing" id="OjO-h1-7A3"/>
+                            <constraint firstItem="7fq-ZD-56N" firstAttribute="top" secondItem="X6L-hz-hrZ" secondAttribute="bottom" id="mlW-hI-bqJ"/>
+                            <constraint firstItem="X6L-hz-hrZ" firstAttribute="leading" secondItem="vSB-Mh-O8v" secondAttribute="leading" id="rVf-Lc-vyL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="X6L-hz-hrZ" id="DhP-gN-u2P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqT-1o-vag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="1510"/>
+        </scene>
     </scenes>
     <resources>
         <image name="175x175" width="87" height="89"/>

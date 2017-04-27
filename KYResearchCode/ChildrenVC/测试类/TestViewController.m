@@ -8,6 +8,7 @@
 
 #import "TestViewController.h"
 #import "TaskModel.h"
+#import "HomeUpsideFistView.h"
 
 @interface TestViewController ()<UIWebViewDelegate>
 

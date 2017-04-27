@@ -28,6 +28,8 @@
 #import "AutoLayoutViewController.h"
 #import "WKWebViewUserController.h"
 #import "CustomButtonViewController.h"
+#import "KYAlertViewController.h"
+#import "SideslipViewController.h"
 
 @interface ViewController ()<UMSocialUIDelegate, UITableViewDataSource, UITableViewDelegate>
 {
@@ -50,6 +52,7 @@
     [self createTabelView];
     
     [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     NSInteger postion = 2;
     
@@ -69,6 +72,9 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
        
         NSLog(@"下拉加载...");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.tableView.mj_header endRefreshing];
+        });
     }];
 }
 
@@ -120,7 +126,7 @@
 - (NSArray *)dataList {
     
     if (!_dataList) {
-        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"常用公共方法", @"微信输入框", @"二维码相关", @"WIFI局域网IP扫描", @"AutoLayoutCell高度自适应", @"WKWebView使用", @"自定义按钮，文字图片位置随意定制", @"测试", @"测试"];
+        _dataList = @[@"录制视频", @"分享测试", @"数据库", @"WebView", @"登陆账号联想", @"已安装app信息", @"网络请求", @"测试类", @"设备唯一标识符", @"自定义动画展示", @"常用公共方法", @"微信输入框", @"二维码相关", @"WIFI局域网IP扫描", @"AutoLayoutCell高度自适应", @"WKWebView使用", @"自定义按钮，文字图片位置随意定制", @"自定义警告提示框", @"TabelView自定义侧滑"];
     }
     return _dataList;
 }
@@ -132,7 +138,7 @@
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
     
-    _tableView.contentInset = UIEdgeInsetsMake(-kNavigationBar_Height, 0, 0, 0);
+//    _tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 #pragma mark - UITableView DataSource
@@ -257,6 +263,17 @@
             vc.title = self.dataList[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         } break;
+        case 17: {
+            KYAlertViewController *vc =[[KYAlertViewController alloc] init];
+            vc.title = self.dataList[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
+        case 18: {
+            UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            SideslipViewController  *vc = [storyBoard instantiateViewControllerWithIdentifier:@"SideslipVCID"];
+            vc.title = self.dataList[indexPath.row];
+            [self.navigationController pushViewController:vc animated:YES];
+        } break;
     }
 }
 
@@ -293,6 +310,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
+    
+    self.navigationController.navigationBar.translucent = YES;
     self.tableView.delegate = self;
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
