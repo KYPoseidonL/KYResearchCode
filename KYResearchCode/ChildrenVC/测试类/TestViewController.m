@@ -9,7 +9,7 @@
 #import "TestViewController.h"
 #import "TaskModel.h"
 
-@interface TestViewController ()
+@interface TestViewController ()<UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *testImageView;
 @property (weak, nonatomic) IBOutlet UIWebView *testWebView;
@@ -38,11 +38,11 @@
 
 - (void)setup {
 
-    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"] placeholderImage:nil];
+//    [self.testImageView sd_setImageWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"] placeholderImage:nil];
     
-//    self.testWebView.scalesPageToFit = YES;
-//    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://assets.sbnation.com/assets/2512203/dogflops.gif"]];
-//    [self.testWebView loadRequest:urlRequest];
+    self.testWebView.delegate = self;
+    NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://c.2or3m.com/Activity/project/videoDetail.html?activityid=2"]];
+    [self.testWebView loadRequest:urlRequest];
     
     
     BOOL isFlag = [KYUtility validateUserName:@"fdas23"];
@@ -194,5 +194,21 @@
     
     return 1;
 }
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+    [self performSelector:@selector(testDelay) withObject:nil afterDelay:3.f];
+}
+
+- (void)testDelay {
+
+    CGFloat webViewHeight1 = [self.testWebView.scrollView contentSize].height;
+    DDLogDebug(@"contentSize: %f", webViewHeight1);
+    
+    CGFloat webViewHeight2 = [[self.testWebView stringByEvaluatingJavaScriptFromString: @"document.body.scrollHeight"]floatValue];
+    DDLogDebug(@"scrollHeight: %f", webViewHeight2);
+    
+}
+
 
 @end
