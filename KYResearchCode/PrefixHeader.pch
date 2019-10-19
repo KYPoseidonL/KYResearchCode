@@ -17,12 +17,6 @@
 #import "UIColor+HexString.h"
 #import "CocoaLumberjack.h"
 #import "UIView+Frame.h"
-#import "UMSocial.h"
-#import "UMSocialWechatHandler.h"//友盟微信分享
-#import "UMSocialQQHandler.h"//友盟QQ分享
-#import <TencentOpenAPI/QQApiInterface.h>//友盟QQ分享框架
-#import "WXApi.h"//友盟微信分享
-#import "UMSocialSinaSSOHandler.h"
 
 #import "FMDB.h"
 #import "MJExtension.h"

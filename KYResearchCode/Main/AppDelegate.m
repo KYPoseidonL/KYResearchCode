@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <AVFoundation/AVFoundation.h>
 
-#import "KeyboardManager.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 {
@@ -42,7 +42,6 @@
     [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
     
-    [self setUpShareMethod];
     
     [[UINavigationBar appearance] setBarTintColor:kColor(kBackgroundColor)];
     
@@ -67,38 +66,6 @@
     [_audioPlayer setVolume:1];
     _audioPlayer.numberOfLoops = -1; //设置音乐播放次数  -1为一直循环
     [_audioPlayer play]; //播放
-}
-
-
-#pragma mark - 友盟分享
-- (void)setUpShareMethod {
-    
-    [UMSocialData setAppKey:@"561dfd35e0f55a8fb900158c"];
-    
-    //设置微信AppId、appSecret，分享url
-    //    [UMSocialWechatHandler setWXAppId:kUmengWXAPPID appSecret:kUmengWXAPPSecret url:kUmengFMURL];
-    
-    //设置分享到QQ/Qzone的应用Id，和分享url链接
-    [UMSocialQQHandler setQQWithAppId:@"1104833205" appKey:@"vahQql3j37jHvVW3" url:@"http://www.baidu.com"];
-    
-    //隐藏没有客户端的APP图标
-    [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToQQ,UMShareToQzone]];
-    //打开新浪微博的SSO开关
-    //    [UMSocialSinaSSOHandler openNewSinaSSOWithRedirectURL:@"http://www.baidu.com"];
-    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"2286807427" secret:@"ce1c4539ae8a418d357650ac17855fa8" RedirectURL:@"http://www.baidu.com"];
-}
-
-#pragma mark - 添加友盟系统回调
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    
-    return  [UMSocialSnsService handleOpenURL:url];
-}
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    BOOL result = [UMSocialSnsService handleOpenURL:url];
-    if (result == FALSE) {
-        //调用其他SDK，例如新浪微博SDK等
-    }
-    return result;
 }
 
 

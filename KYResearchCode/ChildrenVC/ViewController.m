@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 
-#import "ShareUIView.h"
-#import "ShareTool.h"
 #import "DataBaseViewController.h"
 #import "KYWebViewViewController.h"
 #import "UserLoginViewController.h"
@@ -31,12 +29,11 @@
 #import "KYAlertViewController.h"
 #import "SideslipViewController.h"
 
-@interface ViewController ()<UMSocialUIDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 {
-    ShareTool           *_shareTool;
+
 }
 
-@property (nonatomic, strong) ShareUIView *shareUIView;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataList;
 
@@ -105,23 +102,6 @@
     return realIndex;
 }
 
-- (ShareUIView *)shareUIView {
-    
-    if (!_shareUIView) {
-        UIImage *postImg = nil;
-        postImg = [UIImage imageNamed:@"test1.jpg"];
-
-        _shareTool = [[ShareTool alloc] initWithViewController:self shareImage:postImg descpContent:@"这是一条测试信息"];
-        _shareUIView = [_shareTool getShareViewWithShareTool];
-        
-        _shareTool.fromeWhere = @"WebViewViewController";
-        [self.view.window addSubview:_shareUIView];
-        [_shareUIView setNeedsLayout];
-        
-    }
-    return _shareUIView;
-
-}
 #pragma mark -LazyLoad
 - (NSArray *)dataList {
     
@@ -173,11 +153,7 @@
             [self.navigationController pushViewController:vc animated:YES];
         } break;
         case 1: {
-            [_shareUIView removeFromSuperview];
-            _shareUIView = nil;
-            
-            [self shareUIView];
-            [_shareTool shareBtnMethod];
+ 
         } break;
         case 2: {
             
