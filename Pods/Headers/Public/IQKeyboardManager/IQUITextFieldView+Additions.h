@@ -1,1 +1,1 @@
-../../../IQKeyboardManager/IQKeyboardManager/Categories/IQUITextFieldView+Additions.h
+../../../IQKeyboardManager/IQKeyBoardManager/Categories/IQUITextFieldView+Additions.h

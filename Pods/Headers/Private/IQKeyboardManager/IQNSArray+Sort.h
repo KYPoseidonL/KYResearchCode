@@ -1,1 +1,1 @@
-../../../IQKeyboardManager/IQKeyboardManager/Categories/IQNSArray+Sort.h
+../../../IQKeyboardManager/IQKeyBoardManager/Categories/IQNSArray+Sort.h

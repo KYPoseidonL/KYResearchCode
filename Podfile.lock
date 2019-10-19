@@ -37,7 +37,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0.4)
   - CocoaLumberjack (~> 2.0.0)
   - FMDB (~> 2.6.2)
-  - IQKeyboardManager
+  - IQKeyboardManager (~> 6.2.0)
   - MJExtension (~> 3.0.10)
   - MJRefresh (~> 3.1.0)
   - SDWebImage (~> 3.7.5)
@@ -64,6 +64,6 @@ SPEC CHECKSUMS:
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
 
-PODFILE CHECKSUM: aefc6b56c70fdc01554b3ebfd7a7964081fd5f81
+PODFILE CHECKSUM: 8fc206f876520b6d12f03e90bac64069ff60e973
 
 COCOAPODS: 1.5.3

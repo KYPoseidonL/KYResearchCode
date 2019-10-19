@@ -1,1 +1,1 @@
-../../../IQKeyboardManager/IQKeyboardManager/Categories/IQUIView+Hierarchy.h
+../../../IQKeyboardManager/IQKeyBoardManager/Categories/IQUIView+Hierarchy.h
