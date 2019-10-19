@@ -52,8 +52,6 @@
 		2DF019A31DF119CA00BF1F98 /* CustomButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF019A21DF119CA00BF1F98 /* CustomButtonViewController.m */; };
 		8202319F1CCB500900B6F6F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8202319E1CCB500900B6F6F6 /* main.m */; };
 		820231AD1CCB500900B6F6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820231AB1CCB500900B6F6F6 /* LaunchScreen.storyboard */; };
-		820231B81CCB500900B6F6F6 /* KYResearchCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820231B71CCB500900B6F6F6 /* KYResearchCodeTests.m */; };
-		820231C31CCB500900B6F6F6 /* KYResearchCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820231C21CCB500900B6F6F6 /* KYResearchCodeUITests.m */; };
 		82A973D51D5583F200F9650A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 82A973D41D5583F200F9650A /* test.json */; };
 		82A973D81D55845200F9650A /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A973D71D55845200F9650A /* TaskModel.m */; };
 		82B11C901CCB67A10041E597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B11C8F1CCB67A10041E597 /* Main.storyboard */; };
@@ -125,23 +123,6 @@
 		82D647D41CCB552600A24EE5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D647D31CCB552600A24EE5 /* Security.framework */; };
 		F822D777218ADF651BC0BAA9 /* libPods-KYResearchCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BC4321B6A282AEBC1F278D /* libPods-KYResearchCode.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		820231B41CCB500900B6F6F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 820231921CCB500900B6F6F6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 820231991CCB500900B6F6F6;
-			remoteInfo = KYResearchCode;
-		};
-		820231BF1CCB500900B6F6F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 820231921CCB500900B6F6F6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 820231991CCB500900B6F6F6;
-			remoteInfo = KYResearchCode;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2006FF1BCD12F51098C602C0 /* Pods-KYResearchCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYResearchCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYResearchCode/Pods-KYResearchCode.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,12 +214,6 @@
 		8202319E1CCB500900B6F6F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		820231AC1CCB500900B6F6F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		820231AE1CCB500900B6F6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		820231B31CCB500900B6F6F6 /* KYResearchCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYResearchCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		820231B71CCB500900B6F6F6 /* KYResearchCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYResearchCodeTests.m; sourceTree = "<group>"; };
-		820231B91CCB500900B6F6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		820231BE1CCB500900B6F6F6 /* KYResearchCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYResearchCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		820231C21CCB500900B6F6F6 /* KYResearchCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYResearchCodeUITests.m; sourceTree = "<group>"; };
-		820231C41CCB500900B6F6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820231D01CCB505200B6F6F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		82A973D41D5583F200F9650A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		82A973D61D55845200F9650A /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
@@ -464,20 +439,6 @@
 				82D647BD1CCB530100A24EE5 /* libSocialWechat.a in Frameworks */,
 				82D647AD1CCB530100A24EE5 /* libWeiboSDK.a in Frameworks */,
 				F822D777218ADF651BC0BAA9 /* libPods-KYResearchCode.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		820231B01CCB500900B6F6F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		820231BB1CCB500900B6F6F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,8 +694,6 @@
 			isa = PBXGroup;
 			children = (
 				8202319C1CCB500900B6F6F6 /* KYResearchCode */,
-				820231B61CCB500900B6F6F6 /* KYResearchCodeTests */,
-				820231C11CCB500900B6F6F6 /* KYResearchCodeUITests */,
 				8202319B1CCB500900B6F6F6 /* Products */,
 				82D647D51CCB553200A24EE5 /* Framework */,
 				FBB08E5DA6A96F74A3E72001 /* Pods */,
@@ -746,8 +705,6 @@
 			isa = PBXGroup;
 			children = (
 				8202319A1CCB500900B6F6F6 /* KYResearchCode.app */,
-				820231B31CCB500900B6F6F6 /* KYResearchCodeTests.xctest */,
-				820231BE1CCB500900B6F6F6 /* KYResearchCodeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -779,24 +736,6 @@
 				8202319E1CCB500900B6F6F6 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		820231B61CCB500900B6F6F6 /* KYResearchCodeTests */ = {
-			isa = PBXGroup;
-			children = (
-				820231B71CCB500900B6F6F6 /* KYResearchCodeTests.m */,
-				820231B91CCB500900B6F6F6 /* Info.plist */,
-			);
-			path = KYResearchCodeTests;
-			sourceTree = "<group>";
-		};
-		820231C11CCB500900B6F6F6 /* KYResearchCodeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				820231C21CCB500900B6F6F6 /* KYResearchCodeUITests.m */,
-				820231C41CCB500900B6F6F6 /* Info.plist */,
-			);
-			path = KYResearchCodeUITests;
 			sourceTree = "<group>";
 		};
 		82A973D31D5583F200F9650A /* Model */ = {
@@ -1368,42 +1307,6 @@
 			productReference = 8202319A1CCB500900B6F6F6 /* KYResearchCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		820231B21CCB500900B6F6F6 /* KYResearchCodeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 820231CA1CCB500900B6F6F6 /* Build configuration list for PBXNativeTarget "KYResearchCodeTests" */;
-			buildPhases = (
-				820231AF1CCB500900B6F6F6 /* Sources */,
-				820231B01CCB500900B6F6F6 /* Frameworks */,
-				820231B11CCB500900B6F6F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				820231B51CCB500900B6F6F6 /* PBXTargetDependency */,
-			);
-			name = KYResearchCodeTests;
-			productName = KYResearchCodeTests;
-			productReference = 820231B31CCB500900B6F6F6 /* KYResearchCodeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		820231BD1CCB500900B6F6F6 /* KYResearchCodeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 820231CD1CCB500900B6F6F6 /* Build configuration list for PBXNativeTarget "KYResearchCodeUITests" */;
-			buildPhases = (
-				820231BA1CCB500900B6F6F6 /* Sources */,
-				820231BB1CCB500900B6F6F6 /* Frameworks */,
-				820231BC1CCB500900B6F6F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				820231C01CCB500900B6F6F6 /* PBXTargetDependency */,
-			);
-			name = KYResearchCodeUITests;
-			productName = KYResearchCodeUITests;
-			productReference = 820231BE1CCB500900B6F6F6 /* KYResearchCodeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1416,14 +1319,6 @@
 					820231991CCB500900B6F6F6 = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					820231B21CCB500900B6F6F6 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 820231991CCB500900B6F6F6;
-					};
-					820231BD1CCB500900B6F6F6 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = 820231991CCB500900B6F6F6;
-					};
 				};
 			};
 			buildConfigurationList = 820231951CCB500900B6F6F6 /* Build configuration list for PBXProject "KYResearchCode" */;
@@ -1431,6 +1326,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -1441,8 +1337,6 @@
 			projectRoot = "";
 			targets = (
 				820231991CCB500900B6F6F6 /* KYResearchCode */,
-				820231B21CCB500900B6F6F6 /* KYResearchCodeTests */,
-				820231BD1CCB500900B6F6F6 /* KYResearchCodeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1474,20 +1368,6 @@
 				82D647B61CCB530100A24EE5 /* UMSCommentInputControlleriPad.xib in Resources */,
 				82D647AE1CCB530100A24EE5 /* WeiboSDK.bundle in Resources */,
 				82D647BB1CCB530100A24EE5 /* UMSShareListController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		820231B11CCB500900B6F6F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		820231BC1CCB500900B6F6F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1625,36 +1505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		820231AF1CCB500900B6F6F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				820231B81CCB500900B6F6F6 /* KYResearchCodeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		820231BA1CCB500900B6F6F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				820231C31CCB500900B6F6F6 /* KYResearchCodeUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		820231B51CCB500900B6F6F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 820231991CCB500900B6F6F6 /* KYResearchCode */;
-			targetProxy = 820231B41CCB500900B6F6F6 /* PBXContainerItemProxy */;
-		};
-		820231C01CCB500900B6F6F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 820231991CCB500900B6F6F6 /* KYResearchCode */;
-			targetProxy = 820231BF1CCB500900B6F6F6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		820231AB1CCB500900B6F6F6 /* LaunchScreen.storyboard */ = {
@@ -1817,54 +1668,6 @@
 			};
 			name = Release;
 		};
-		820231CB1CCB500900B6F6F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = KYResearchCodeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KYPoseidonL.KYResearchCodeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYResearchCode.app/KYResearchCode";
-			};
-			name = Debug;
-		};
-		820231CC1CCB500900B6F6F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = KYResearchCodeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KYPoseidonL.KYResearchCodeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KYResearchCode.app/KYResearchCode";
-			};
-			name = Release;
-		};
-		820231CE1CCB500900B6F6F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = KYResearchCodeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KYPoseidonL.KYResearchCodeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = KYResearchCode;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		820231CF1CCB500900B6F6F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = KYResearchCodeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KYPoseidonL.KYResearchCodeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = KYResearchCode;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1882,24 +1685,6 @@
 			buildConfigurations = (
 				820231C81CCB500900B6F6F6 /* Debug */,
 				820231C91CCB500900B6F6F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		820231CA1CCB500900B6F6F6 /* Build configuration list for PBXNativeTarget "KYResearchCodeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				820231CB1CCB500900B6F6F6 /* Debug */,
-				820231CC1CCB500900B6F6F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		820231CD1CCB500900B6F6F6 /* Build configuration list for PBXNativeTarget "KYResearchCodeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				820231CE1CCB500900B6F6F6 /* Debug */,
-				820231CF1CCB500900B6F6F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
